@@ -37,8 +37,8 @@
     <div id="doc" class="markdown-body container-fluid"><h1 id="Startsemester-verdiepingsverslag-technology"><a class="anchor hidden-xs" href="#Startsemester-verdiepingsverslag-technology" title="Startsemester-verdiepingsverslag-technology"><i class="fa fa-link"></i></a><strong>Startsemester verdiepingsverslag technology</strong></h1><p><img src="https://md.jeltad.com/uploads/upload_982cb61dbdb2dd227f8c7af40b29936c.png" alt="Arduino logo" class="md-image md-image"></p><p>Studentnaam: Jelle Tadema<br>
 Studentnummer: 5125820<br>
 Klas: P-DB01<br>
-Vakdocent: Rop Pulles</p><p>Versie: 0.5<br>
-Datum: 16-05-2023</p><hr><h1 id="Versiebeheer"><a class="anchor hidden-xs" href="#Versiebeheer" title="Versiebeheer"><i class="fa fa-link"></i></a>Versiebeheer</h1><table>
+Vakdocent: Rop Pulles</p><p>Versie: 0.6<br>
+Datum: 22-05-2023</p><hr><h1 id="Versiebeheer"><a class="anchor hidden-xs" href="#Versiebeheer" title="Versiebeheer"><i class="fa fa-link"></i></a>Versiebeheer</h1><table>
 <thead>
 <tr>
 <th>Versienummer</th>
@@ -78,6 +78,12 @@ Datum: 16-05-2023</p><hr><h1 id="Versiebeheer"><a class="anchor hidden-xs" href=
 <td>Jelle Tadema</td>
 <td>Afmaken challenges 5 en begin challenges 6</td>
 </tr>
+<tr>
+<td>0.6</td>
+<td>22-05-2023</td>
+<td>Jelle Tadema</td>
+<td>Afmaken challenges 6 en begin 7</td>
+</tr>
 </tbody>
 </table><hr><h1 id="Inhoudsopgave"><a class="anchor hidden-xs" href="#Inhoudsopgave" title="Inhoudsopgave"><i class="fa fa-link"></i></a>Inhoudsopgave</h1><p></p><div class="toc"><ul>
 <li><a href="#Startsemester-verdiepingsverslag-technology" title="Startsemester verdiepingsverslag technology">Startsemester verdiepingsverslag technology</a></li>
@@ -105,9 +111,17 @@ Datum: 16-05-2023</p><hr><h1 id="Versiebeheer"><a class="anchor hidden-xs" href=
 <li><a href="#Challenge-524-Running-average" title="Challenge 5.2.4 Running average">Challenge 5.2.4 Running average</a></li>
 <li><a href="#Challenge-525-Hysteresis" title="Challenge 5.2.5 Hysteresis">Challenge 5.2.5 Hysteresis</a></li>
 <li><a href="#Challenge-611-DHT-Library" title="Challenge 6.1.1 DHT Library">Challenge 6.1.1 DHT Library</a></li>
+<li><a href="#Challenge-612-Ping-sensor-library" title="Challenge 6.1.2 Ping sensor library">Challenge 6.1.2 Ping sensor library</a></li>
 </ul>
 </li>
-<li><a href="#32-Sprint-2-tussenproduct" title="3.2 Sprint 2: tussenproduct">3.2 Sprint 2: tussenproduct</a></li>
+<li><a href="#32-Sprint-2-tussenproduct" title="3.2 Sprint 2: tussenproduct">3.2 Sprint 2: tussenproduct</a><ul>
+<li><a href="#Challenge-712-Traffic-light" title="Challenge 7.1.2 Traffic light">Challenge 7.1.2 Traffic light</a></li>
+<li><a href="#Challenge-714-LED-class-expert" title="Challenge 7.1.4 LED class expert">Challenge 7.1.4 LED class expert</a></li>
+<li><a href="#Challenge-715-Button-class-expert" title="Challenge 7.1.5 Button class expert">Challenge 7.1.5 Button class expert</a></li>
+<li><a href="#Challenge-716-Timer-class-expert" title="Challenge 7.1.6 Timer class expert">Challenge 7.1.6 Timer class expert</a></li>
+<li><a href="#Challenge-717-Traffic-light-expert" title="Challenge 7.1.7 Traffic light expert">Challenge 7.1.7 Traffic light expert</a></li>
+</ul>
+</li>
 <li><a href="#32-Sprint-3-eindproduct" title="3.2 Sprint 3: eindproduct">3.2 Sprint 3: eindproduct</a></li>
 </ul>
 </li>
@@ -128,7 +142,7 @@ Datum: 16-05-2023</p><hr><h1 id="Versiebeheer"><a class="anchor hidden-xs" href=
 <p>Beschrijf hier de opbouw van dit verslag</p>
 </blockquote><hr><h1 id="2-Introductie"><a class="anchor hidden-xs" href="#2-Introductie" title="2-Introductie"><i class="fa fa-link"></i></a>2 Introductie</h1><blockquote>
 <p>Beschrijf hier kort jullie project als groep en meer uitgebreid wat je individuele bijdrage daarin zal zijn</p>
-</blockquote><hr><h1 id="3-Aantonen-leerdoelen"><a class="anchor hidden-xs" href="#3-Aantonen-leerdoelen" title="3-Aantonen-leerdoelen"><i class="fa fa-link"></i></a>3 Aantonen leerdoelen</h1><h2 id="31-Sprint-1-proof-of-concepts"><a class="anchor hidden-xs" href="#31-Sprint-1-proof-of-concepts" title="31-Sprint-1-proof-of-concepts"><i class="fa fa-link"></i></a>3.1 Sprint 1: proof of concepts</h2><h3 id="Challenge-221-Arduino-pinout"><a class="anchor hidden-xs" href="#Challenge-221-Arduino-pinout" title="Challenge-221-Arduino-pinout"><i class="fa fa-link"></i></a>Challenge 2.2.1 Arduino pinout</h3><h4 id="Beschrijving"><a class="anchor hidden-xs" href="#Beschrijving" title="Beschrijving"><i class="fa fa-link"></i></a>Beschrijving</h4><p>Find a comprehensive picture of the Arduino Uno board layout which you can use for your future projects.</p><h4 id="Aanpak"><a class="anchor hidden-xs" href="#Aanpak" title="Aanpak"><i class="fa fa-link"></i></a>Aanpak</h4><p>Voor deze opdracht ga ik op zoek naar een afbeelding met de functie van alle pinnen erbij van de arduino uno.</p><h4 id="Test-resultaat"><a class="anchor hidden-xs" href="#Test-resultaat" title="Test-resultaat"><i class="fa fa-link"></i></a>Test resultaat</h4><p><img src="https://md.jeltad.com/uploads/upload_e95f88152f3cdef0fe08be54e827310a.png" alt="Arduino pinout" class="md-image md-image"></p><h4 id="Wat-heb-ik-geleerd"><a class="anchor hidden-xs" href="#Wat-heb-ik-geleerd" title="Wat-heb-ik-geleerd"><i class="fa fa-link"></i></a>Wat heb ik geleerd?</h4><p>Bij deze challenge heb ik geleerd welke pinnen van de arduino bepaalde functies hebben en welke niet. Zo zijn links onder de pinnen voor analoge input en de pinnen met een tilde ervoor zijn de pinnen voor PWM output.</p><h4 id="Bronnen"><a class="anchor hidden-xs" href="#Bronnen" title="Bronnen"><i class="fa fa-link"></i></a>Bronnen</h4><p><a href="https://docs.arduino.cc/retired/boards/arduino-uno-rev3-with-long-pins" target="_blank" rel="noopener">https://docs.arduino.cc/retired/boards/arduino-uno-rev3-with-long-pins</a></p><h3 id="Challenge-251-Tinkercad-circuit"><a class="anchor hidden-xs" href="#Challenge-251-Tinkercad-circuit" title="Challenge-251-Tinkercad-circuit"><i class="fa fa-link"></i></a>Challenge 2.5.1 Tinkercad circuit</h3><h4 id="Beschrijving1"><a class="anchor hidden-xs" href="#Beschrijving1" title="Beschrijving1"><i class="fa fa-link"></i></a>Beschrijving</h4><p>Use TinkerCad <a href="https://www.tinkercad.com/" target="_blank" rel="noopener">https://www.tinkercad.com/</a> to create the following circuits:</p><ul>
+</blockquote><p>Mijn naam is Jelle en ik ben een ICT student op Fontys. Ik heb voor deze opleiding gekozen omdat deze opleiding aansluit op mijn interesses. In het startsemester wil ik van alle onderdelen van ICT mijn kennis verbreden om beter tot een profielkeuze te kunnen komen. Op het gebied van professionele ontwikkeling wil ik me ontwikkelen in samenwerking en communicatie. Ik ben gewend om alleen aan projecten te werken en in de proftaak zal ik me dus aan moeten passen. Over vijf jaar hoop ik deze opleiding afgerond te hebben en aan het werk te zijn, of bezig te zijn met een master.</p><hr><h1 id="3-Aantonen-leerdoelen"><a class="anchor hidden-xs" href="#3-Aantonen-leerdoelen" title="3-Aantonen-leerdoelen"><i class="fa fa-link"></i></a>3 Aantonen leerdoelen</h1><h2 id="31-Sprint-1-proof-of-concepts"><a class="anchor hidden-xs" href="#31-Sprint-1-proof-of-concepts" title="31-Sprint-1-proof-of-concepts"><i class="fa fa-link"></i></a>3.1 Sprint 1: proof of concepts</h2><h3 id="Challenge-221-Arduino-pinout"><a class="anchor hidden-xs" href="#Challenge-221-Arduino-pinout" title="Challenge-221-Arduino-pinout"><i class="fa fa-link"></i></a>Challenge 2.2.1 Arduino pinout</h3><h4 id="Beschrijving"><a class="anchor hidden-xs" href="#Beschrijving" title="Beschrijving"><i class="fa fa-link"></i></a>Beschrijving</h4><p>Find a comprehensive picture of the Arduino Uno board layout which you can use for your future projects.</p><h4 id="Aanpak"><a class="anchor hidden-xs" href="#Aanpak" title="Aanpak"><i class="fa fa-link"></i></a>Aanpak</h4><p>Voor deze opdracht ga ik op zoek naar een afbeelding met de functie van alle pinnen erbij van de arduino uno.</p><h4 id="Test-resultaat"><a class="anchor hidden-xs" href="#Test-resultaat" title="Test-resultaat"><i class="fa fa-link"></i></a>Test resultaat</h4><p><img src="https://md.jeltad.com/uploads/upload_e95f88152f3cdef0fe08be54e827310a.png" alt="Arduino pinout" class="md-image md-image"></p><h4 id="Wat-heb-ik-geleerd"><a class="anchor hidden-xs" href="#Wat-heb-ik-geleerd" title="Wat-heb-ik-geleerd"><i class="fa fa-link"></i></a>Wat heb ik geleerd?</h4><p>Bij deze challenge heb ik geleerd welke pinnen van de arduino bepaalde functies hebben en welke niet. Zo zijn links onder de pinnen voor analoge input en de pinnen met een tilde ervoor zijn de pinnen voor PWM output.</p><h4 id="Bronnen"><a class="anchor hidden-xs" href="#Bronnen" title="Bronnen"><i class="fa fa-link"></i></a>Bronnen</h4><p><a href="https://docs.arduino.cc/retired/boards/arduino-uno-rev3-with-long-pins" target="_blank" rel="noopener">https://docs.arduino.cc/retired/boards/arduino-uno-rev3-with-long-pins</a></p><h3 id="Challenge-251-Tinkercad-circuit"><a class="anchor hidden-xs" href="#Challenge-251-Tinkercad-circuit" title="Challenge-251-Tinkercad-circuit"><i class="fa fa-link"></i></a>Challenge 2.5.1 Tinkercad circuit</h3><h4 id="Beschrijving1"><a class="anchor hidden-xs" href="#Beschrijving1" title="Beschrijving1"><i class="fa fa-link"></i></a>Beschrijving</h4><p>Use TinkerCad <a href="https://www.tinkercad.com/" target="_blank" rel="noopener">https://www.tinkercad.com/</a> to create the following circuits:</p><ul>
 <li>LED which can be controlled with a digital output pin.</li>
 <li>Button which can be read with a digital input pin.</li>
 <li>Potentiometer which can be read using an analog input.</li>
@@ -379,23 +393,81 @@ dhtTemperature = dht.temperature;
 <p>How fast can you read the temperature?</p>
 <p>Om geen errors te krijgen kan er maar elke 1.2 seconden gemeten worden.</p>
 </li>
-</ul><h4 id="Wat-heb-ik-geleerd12"><a class="anchor hidden-xs" href="#Wat-heb-ik-geleerd12" title="Wat-heb-ik-geleerd12"><i class="fa fa-link"></i></a>Wat heb ik geleerd?</h4><p>Ik heb geleerd om met libraries te werken, specifiek met die van de DHT11. Daarnaast heb ik geleerd over het verschil tussen resolutie en nauwkeurigheid.</p><h4 id="Bronnen10"><a class="anchor hidden-xs" href="#Bronnen10" title="Bronnen10"><i class="fa fa-link"></i></a>Bronnen</h4><p><a href="https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf" target="_blank" rel="noopener">https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf</a></p><h2 id="32-Sprint-2-tussenproduct"><a class="anchor hidden-xs" href="#32-Sprint-2-tussenproduct" title="32-Sprint-2-tussenproduct"><i class="fa fa-link"></i></a>3.2 Sprint 2: tussenproduct</h2><blockquote>
-<p>Template</p>
-</blockquote><pre><code class="md hljs">## <span class="hljs-number">3.0</span> Sprint <span class="hljs-number">0</span>: x
+</ul><h4 id="Wat-heb-ik-geleerd12"><a class="anchor hidden-xs" href="#Wat-heb-ik-geleerd12" title="Wat-heb-ik-geleerd12"><i class="fa fa-link"></i></a>Wat heb ik geleerd?</h4><p>Ik heb geleerd om met libraries te werken, specifiek met die van de DHT11. Daarnaast heb ik geleerd over het verschil tussen resolutie en nauwkeurigheid.</p><h4 id="Bronnen10"><a class="anchor hidden-xs" href="#Bronnen10" title="Bronnen10"><i class="fa fa-link"></i></a>Bronnen</h4><p><a href="https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf" target="_blank" rel="noopener">https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf</a></p><h3 id="Challenge-612-Ping-sensor-library"><a class="anchor hidden-xs" href="#Challenge-612-Ping-sensor-library" title="Challenge-612-Ping-sensor-library"><i class="fa fa-link"></i></a>Challenge 6.1.2 Ping sensor library</h3><h4 id="Beschrijving13"><a class="anchor hidden-xs" href="#Beschrijving13" title="Beschrijving13"><i class="fa fa-link"></i></a>Beschrijving</h4><ul>
+<li>
+<p>Use the NewPing library to read the distance with an ultrasonic sensor.</p>
+</li>
+<li>
+<p>Have a look at the ultrasonic sensor datasheet.</p>
+</li>
+<li>
+<p>Look closely at the distance readings, are they as you expect?</p>
+<p>De gelezen waardes zijn realistisch en voldoen aan mijn verwachtingen.</p>
+</li>
+<li>
+<p>What happens with</p>
+<ul>
+<li>irregular or sloped objects?<br>
+Het verchilt per object. Soms werkt het prima, andere keren niet en anders is de afstand niet accuraat.</li>
+<li>moving objects?<br>
+Als er een object voorbij gaat wordt die afstand gemeten zolang het object ervoor is.</li>
+<li>when no object is nearby?<br>
+Dan staat er 0 cm.</li>
+</ul>
+</li>
+</ul><h4 id="Aanpak11"><a class="anchor hidden-xs" href="#Aanpak11" title="Aanpak11"><i class="fa fa-link"></i></a>Aanpak</h4><p>Ik ga het voorbeeld van de newping library gebruiken omdat daarin een voorbeeld staat van hoe de library gebruikt moet worden.</p><h4 id="Wat-heb-ik-geleerd13"><a class="anchor hidden-xs" href="#Wat-heb-ik-geleerd13" title="Wat-heb-ik-geleerd13"><i class="fa fa-link"></i></a>Wat heb ik geleerd?</h4><p>Ik heb geleerd om te werken met de functies van de newping library.</p><pre><code class="cpp hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span></div><div class="code"><span class="hljs-keyword">int</span> distance = sonar.ping_cm();
+</div></div></code></pre><h4 id="Bronnen11"><a class="anchor hidden-xs" href="#Bronnen11" title="Bronnen11"><i class="fa fa-link"></i></a>Bronnen</h4><p><a href="https://reference.arduino.cc/reference/en/libraries/newping/" target="_blank" rel="noopener">https://reference.arduino.cc/reference/en/libraries/newping/</a></p><p><a href="https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf" target="_blank" rel="noopener">https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf</a></p><h2 id="32-Sprint-2-tussenproduct"><a class="anchor hidden-xs" href="#32-Sprint-2-tussenproduct" title="32-Sprint-2-tussenproduct"><i class="fa fa-link"></i></a>3.2 Sprint 2: tussenproduct</h2><h3 id="Challenge-712-Traffic-light"><a class="anchor hidden-xs" href="#Challenge-712-Traffic-light" title="Challenge-712-Traffic-light"><i class="fa fa-link"></i></a>Challenge 7.1.2 Traffic light</h3><h4 id="Beschrijving14"><a class="anchor hidden-xs" href="#Beschrijving14" title="Beschrijving14"><i class="fa fa-link"></i></a>Beschrijving</h4><p>You will create a console project in C# with Visual studio .NET that represents a traffic light.<br>
+Make sure that your program meets the following requirements:</p><ul>
+<li>The project should contain multiple objects of type TrafficLight.</li>
+<li>A TrafficLight can have the colors (states) ‘green’, ‘orange’, ‘red’: use English names for these states.</li>
+<li>For safety, the status is always set to red when creating a TrafficLight.</li>
+<li>From red, the state can only turn to green, then to orange, then to red again.</li>
+<li>You can use a buttonpress to indicate that a car has arrived.</li>
+<li>The light will be orange for 2 seconds and green for 5 seconds. Make sure that during the states your system can still react on events.</li>
+</ul><h4 id="Aanpak12"><a class="anchor hidden-xs" href="#Aanpak12" title="Aanpak12"><i class="fa fa-link"></i></a>Aanpak</h4><p>Ik ga eerst een klasse <code>TrafficLight</code> schrijven met de benodigde variabelen en de functie <code>CarArrived()</code>. Daarna ga ik in een andere klasse de input en controles doen.</p><h4 id="Test-resultaat11"><a class="anchor hidden-xs" href="#Test-resultaat11" title="Test-resultaat11"><i class="fa fa-link"></i></a>Test resultaat</h4><p>Ik heb een programma geschreven bestaande uit 2 stoplichten die los van elkaar bestuurd kunnen worden.</p><p><a href="https://www.youtube.com/watch?v=O8RAjrNkNh4" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/O8RAjrNkNh4/0.jpg" alt="Thumnail" class="md-image md-image"></a></p><p><a href="https://www.youtube.com/watch?v=O8RAjrNkNh4" target="_blank" rel="noopener">https://www.youtube.com/watch?v=O8RAjrNkNh4</a></p><h4 id="Wat-heb-ik-geleerd14"><a class="anchor hidden-xs" href="#Wat-heb-ik-geleerd14" title="Wat-heb-ik-geleerd14"><i class="fa fa-link"></i></a>Wat heb ik geleerd?</h4><p>Ik heb geleerd om met klassen in C# te werken. Een klasse is een soort blauwdruk. Van een klasse kan je een object aanmaken en met dat object kan je dan dingen doen. Bij deze opdracht heb ik van de klasse <code>TrafficLight</code> een array van objecten <code>lights[]</code> aangemaakt…</p><p>Daarnaast ik geleerd om te werken met <code>await</code> in plaats van <code>sleep</code>. Dit zorgt ervoor dat het programma niet stopt tijdens heb wachten.</p><h4 id="Bronnen12"><a class="anchor hidden-xs" href="#Bronnen12" title="Bronnen12"><i class="fa fa-link"></i></a>Bronnen</h4><p><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/await" target="_blank" rel="noopener">https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/await</a></p><p><a href="https://stasemsoft.github.io/" target="_blank" rel="noopener">https://stasemsoft.github.io/</a></p><h3 id="Challenge-714-LED-class-expert"><a class="anchor hidden-xs" href="#Challenge-714-LED-class-expert" title="Challenge-714-LED-class-expert"><i class="fa fa-link"></i></a>Challenge 7.1.4 LED class expert</h3><h4 id="Beschrijving15"><a class="anchor hidden-xs" href="#Beschrijving15" title="Beschrijving15"><i class="fa fa-link"></i></a>Beschrijving</h4><p>Doing OOP on an Arduino is a little bit different than doing OOP in C#, so please take a look at the Workshop OO on Arduino in the Toolbox section of this course and the following internet resource <a href="https://docs.arduino.cc/learn/contributions/arduino-creating-library-guide" target="_blank" rel="noopener">https://docs.arduino.cc/learn/contributions/arduino-creating-library-guide</a>.</p><p>Tip: There is an ‘Arduino_OOP_Demo_Basic’ example program in the Toolbox - &gt; Example programs section of this course which contains some do and don’ts when programming OOP on an Arduino!</p><ul>
+<li>If you are into OO programming on the Arduino, create a LED class which can blink a LED. With this class you can handle as many LEDs as you like just by creating instances of the LED class.</li>
+</ul><h4 id="Aanpak13"><a class="anchor hidden-xs" href="#Aanpak13" title="Aanpak13"><i class="fa fa-link"></i></a>Aanpak</h4><p>Ik ga een led klasse schrijven met een blink functie erin.</p><h4 id="Test-resultaat12"><a class="anchor hidden-xs" href="#Test-resultaat12" title="Test-resultaat12"><i class="fa fa-link"></i></a>Test resultaat</h4><p>Ik kan een object van de klasse aanmaken en de functie aanroepen om de led te laten knipperen.</p><p><a href="https://www.youtube.com/watch?v=jGgzWXo2_wE" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/jGgzWXo2_wE/0.jpg" alt="Thumnail" class="md-image md-image"></a></p><p><a href="https://www.youtube.com/watch?v=jGgzWXo2_wE" target="_blank" rel="noopener">https://www.youtube.com/watch?v=jGgzWXo2_wE</a></p><h4 id="Wat-heb-ik-geleerd15"><a class="anchor hidden-xs" href="#Wat-heb-ik-geleerd15" title="Wat-heb-ik-geleerd15"><i class="fa fa-link"></i></a>Wat heb ik geleerd?</h4><p>Ik heb geleerd hoe ik in c++ een klasse en een library kan schrijven. Een library maak je door gebruik te maken van een .h bestand waarin je de functies en variabelen declareert. Daarnaast schrijve je een .cpp bestand met de daadwerkelijke functies erin.</p><pre><code class="cpp hljs"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">"Arduino.h"</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">"Led.h"</span></span>
 
-### Challenge y
+Led::Led(<span class="hljs-keyword">int</span> pin)
+{
+  _pin = pin;
+  pinMode(_pin, OUTPUT);
+}
 
-#### Beschrijving
+<span class="hljs-keyword">void</span> Led::blink(<span class="hljs-keyword">int</span> amount, <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span> timeBetweenStateChanges) {}
+</code></pre><pre><code class="cpp hljs"><span class="hljs-meta">#<span class="hljs-meta-keyword">ifndef</span> Led_h</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> Led_h</span>
 
-#### Aanpak
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">"Arduino.h"</span></span>
 
-#### Test resultaat
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Led</span>
+{</span>
+  <span class="hljs-keyword">public</span>:
+    Led(<span class="hljs-keyword">int</span> pin);
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">blink</span><span class="hljs-params">(<span class="hljs-keyword">int</span>, <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span>)</span></span>;
+  <span class="hljs-keyword">private</span>:
+    <span class="hljs-keyword">int</span> _pin;
+};
 
-#### Wat heb ik geleerd?
+<span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span></span>
+</code></pre><h4 id="Bronnen13"><a class="anchor hidden-xs" href="#Bronnen13" title="Bronnen13"><i class="fa fa-link"></i></a>Bronnen</h4><p><a href="https://docs.arduino.cc/learn/contributions/arduino-creating-library-guide" target="_blank" rel="noopener">https://docs.arduino.cc/learn/contributions/arduino-creating-library-guide</a></p><h3 id="Challenge-715-Button-class-expert"><a class="anchor hidden-xs" href="#Challenge-715-Button-class-expert" title="Challenge-715-Button-class-expert"><i class="fa fa-link"></i></a>Challenge 7.1.5 Button class expert</h3><h4 id="Beschrijving16"><a class="anchor hidden-xs" href="#Beschrijving16" title="Beschrijving16"><i class="fa fa-link"></i></a>Beschrijving</h4><p>If you are into OO programming on the Arduino create a button class so you can handle as many buttons as you like.</p><h4 id="Aanpak14"><a class="anchor hidden-xs" href="#Aanpak14" title="Aanpak14"><i class="fa fa-link"></i></a>Aanpak</h4><p>Ik ga een button klasse schrijven met een functie om te controleren of de button ingedrukt is.</p><h4 id="Test-resultaat13"><a class="anchor hidden-xs" href="#Test-resultaat13" title="Test-resultaat13"><i class="fa fa-link"></i></a>Test resultaat</h4><p>Het programma werkt zoals verwacht.</p><p><a href="https://www.youtube.com/watch?v=zCfaujnLMRU" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/zCfaujnLMRU/0.jpg" alt="Thumnail" class="md-image md-image"></a></p><p><a href="https://www.youtube.com/watch?v=zCfaujnLMRU" target="_blank" rel="noopener">https://www.youtube.com/watch?v=zCfaujnLMRU</a></p><h4 id="Wat-heb-ik-geleerd16"><a class="anchor hidden-xs" href="#Wat-heb-ik-geleerd16" title="Wat-heb-ik-geleerd16"><i class="fa fa-link"></i></a>Wat heb ik geleerd?</h4><p>Ik heb verder geoefend met het maken van klassen in c++.</p><pre><code class="cpp hljs"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">"Led.h"</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">"Button.h"</span></span>
 
-#### Bronnen
+<span class="hljs-function">Led <span class="hljs-title">led</span><span class="hljs-params">(<span class="hljs-number">3</span>)</span></span>;
+<span class="hljs-function">Button <span class="hljs-title">button</span><span class="hljs-params">(<span class="hljs-number">2</span>)</span></span>;
 
-</code></pre><h2 id="32-Sprint-3-eindproduct"><a class="anchor hidden-xs" href="#32-Sprint-3-eindproduct" title="32-Sprint-3-eindproduct"><i class="fa fa-link"></i></a>3.2 Sprint 3: eindproduct</h2><blockquote>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">if</span>(button.pressed()) {
+    led.toggle();
+  }
+}
+</code></pre><h4 id="Bronnen14"><a class="anchor hidden-xs" href="#Bronnen14" title="Bronnen14"><i class="fa fa-link"></i></a>Bronnen</h4><p><a href="https://docs.arduino.cc/learn/contributions/arduino-creating-library-guide" target="_blank" rel="noopener">https://docs.arduino.cc/learn/contributions/arduino-creating-library-guide</a></p><h3 id="Challenge-716-Timer-class-expert"><a class="anchor hidden-xs" href="#Challenge-716-Timer-class-expert" title="Challenge-716-Timer-class-expert"><i class="fa fa-link"></i></a>Challenge 7.1.6 Timer class expert</h3><h4 id="Beschrijving17"><a class="anchor hidden-xs" href="#Beschrijving17" title="Beschrijving17"><i class="fa fa-link"></i></a>Beschrijving</h4><p>If you are into OO programming on the Arduino, have another look at the Blinking LEDs challenge above.<br>
+Make your own timer class. Then use this timer class to improve the Blinking LEDs challenge. Note that using a timer class will make your code more readable, reusable and scalable!</p><h4 id="Aanpak15"><a class="anchor hidden-xs" href="#Aanpak15" title="Aanpak15"><i class="fa fa-link"></i></a>Aanpak</h4><h4 id="Test-resultaat14"><a class="anchor hidden-xs" href="#Test-resultaat14" title="Test-resultaat14"><i class="fa fa-link"></i></a>Test resultaat</h4><h4 id="Wat-heb-ik-geleerd17"><a class="anchor hidden-xs" href="#Wat-heb-ik-geleerd17" title="Wat-heb-ik-geleerd17"><i class="fa fa-link"></i></a>Wat heb ik geleerd?</h4><h4 id="Bronnen15"><a class="anchor hidden-xs" href="#Bronnen15" title="Bronnen15"><i class="fa fa-link"></i></a>Bronnen</h4><p><a href="https://docs.arduino.cc/learn/contributions/arduino-creating-library-guide" target="_blank" rel="noopener">https://docs.arduino.cc/learn/contributions/arduino-creating-library-guide</a></p><h3 id="Challenge-717-Traffic-light-expert"><a class="anchor hidden-xs" href="#Challenge-717-Traffic-light-expert" title="Challenge-717-Traffic-light-expert"><i class="fa fa-link"></i></a>Challenge 7.1.7 Traffic light expert</h3><h4 id="Beschrijving18"><a class="anchor hidden-xs" href="#Beschrijving18" title="Beschrijving18"><i class="fa fa-link"></i></a>Beschrijving</h4><p>Make a traffic light controller on the Arduino and use classes.</p><h4 id="Aanpak16"><a class="anchor hidden-xs" href="#Aanpak16" title="Aanpak16"><i class="fa fa-link"></i></a>Aanpak</h4><p>Ik ga de Led, Button en Timer klassen samenvoegen tot een stoplicht.</p><h4 id="Test-resultaat15"><a class="anchor hidden-xs" href="#Test-resultaat15" title="Test-resultaat15"><i class="fa fa-link"></i></a>Test resultaat</h4><h4 id="Wat-heb-ik-geleerd18"><a class="anchor hidden-xs" href="#Wat-heb-ik-geleerd18" title="Wat-heb-ik-geleerd18"><i class="fa fa-link"></i></a>Wat heb ik geleerd?</h4><h4 id="Bronnen16"><a class="anchor hidden-xs" href="#Bronnen16" title="Bronnen16"><i class="fa fa-link"></i></a>Bronnen</h4><p><a href="https://docs.arduino.cc/learn/contributions/arduino-creating-library-guide" target="_blank" rel="noopener">https://docs.arduino.cc/learn/contributions/arduino-creating-library-guide</a></p><h2 id="32-Sprint-3-eindproduct"><a class="anchor hidden-xs" href="#32-Sprint-3-eindproduct" title="32-Sprint-3-eindproduct"><i class="fa fa-link"></i></a>3.2 Sprint 3: eindproduct</h2><blockquote>
 <p>Template</p>
 </blockquote><pre><code class="md hljs">## <span class="hljs-number">3.0</span> Sprint <span class="hljs-number">0</span>: x
 
@@ -450,9 +522,17 @@ dhtTemperature = dht.temperature;
 <li><a href="#Challenge-524-Running-average" title="Challenge 5.2.4 Running average">Challenge 5.2.4 Running average</a></li>
 <li><a href="#Challenge-525-Hysteresis" title="Challenge 5.2.5 Hysteresis">Challenge 5.2.5 Hysteresis</a></li>
 <li><a href="#Challenge-611-DHT-Library" title="Challenge 6.1.1 DHT Library">Challenge 6.1.1 DHT Library</a></li>
+<li><a href="#Challenge-612-Ping-sensor-library" title="Challenge 6.1.2 Ping sensor library">Challenge 6.1.2 Ping sensor library</a></li>
 </ul>
 </li>
-<li><a href="#32-Sprint-2-tussenproduct" title="3.2 Sprint 2: tussenproduct">3.2 Sprint 2: tussenproduct</a></li>
+<li><a href="#32-Sprint-2-tussenproduct" title="3.2 Sprint 2: tussenproduct">3.2 Sprint 2: tussenproduct</a><ul class="nav">
+<li><a href="#Challenge-712-Traffic-light" title="Challenge 7.1.2 Traffic light">Challenge 7.1.2 Traffic light</a></li>
+<li><a href="#Challenge-714-LED-class-expert" title="Challenge 7.1.4 LED class expert">Challenge 7.1.4 LED class expert</a></li>
+<li><a href="#Challenge-715-Button-class-expert" title="Challenge 7.1.5 Button class expert">Challenge 7.1.5 Button class expert</a></li>
+<li><a href="#Challenge-716-Timer-class-expert" title="Challenge 7.1.6 Timer class expert">Challenge 7.1.6 Timer class expert</a></li>
+<li><a href="#Challenge-717-Traffic-light-expert" title="Challenge 7.1.7 Traffic light expert">Challenge 7.1.7 Traffic light expert</a></li>
+</ul>
+</li>
 <li><a href="#32-Sprint-3-eindproduct" title="3.2 Sprint 3: eindproduct">3.2 Sprint 3: eindproduct</a></li>
 </ul>
 </li>
@@ -494,9 +574,17 @@ dhtTemperature = dht.temperature;
 <li><a href="#Challenge-524-Running-average" title="Challenge 5.2.4 Running average">Challenge 5.2.4 Running average</a></li>
 <li><a href="#Challenge-525-Hysteresis" title="Challenge 5.2.5 Hysteresis">Challenge 5.2.5 Hysteresis</a></li>
 <li><a href="#Challenge-611-DHT-Library" title="Challenge 6.1.1 DHT Library">Challenge 6.1.1 DHT Library</a></li>
+<li><a href="#Challenge-612-Ping-sensor-library" title="Challenge 6.1.2 Ping sensor library">Challenge 6.1.2 Ping sensor library</a></li>
 </ul>
 </li>
-<li><a href="#32-Sprint-2-tussenproduct" title="3.2 Sprint 2: tussenproduct">3.2 Sprint 2: tussenproduct</a></li>
+<li><a href="#32-Sprint-2-tussenproduct" title="3.2 Sprint 2: tussenproduct">3.2 Sprint 2: tussenproduct</a><ul class="nav">
+<li><a href="#Challenge-712-Traffic-light" title="Challenge 7.1.2 Traffic light">Challenge 7.1.2 Traffic light</a></li>
+<li><a href="#Challenge-714-LED-class-expert" title="Challenge 7.1.4 LED class expert">Challenge 7.1.4 LED class expert</a></li>
+<li><a href="#Challenge-715-Button-class-expert" title="Challenge 7.1.5 Button class expert">Challenge 7.1.5 Button class expert</a></li>
+<li><a href="#Challenge-716-Timer-class-expert" title="Challenge 7.1.6 Timer class expert">Challenge 7.1.6 Timer class expert</a></li>
+<li><a href="#Challenge-717-Traffic-light-expert" title="Challenge 7.1.7 Traffic light expert">Challenge 7.1.7 Traffic light expert</a></li>
+</ul>
+</li>
 <li><a href="#32-Sprint-3-eindproduct" title="3.2 Sprint 3: eindproduct">3.2 Sprint 3: eindproduct</a></li>
 </ul>
 </li>
