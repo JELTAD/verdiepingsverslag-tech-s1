@@ -37,11 +37,11 @@
     <div id="doc" class="markdown-body container-fluid"><h1 id="Startsemester-verdiepingsverslag-technology"><a class="anchor hidden-xs" href="#Startsemester-verdiepingsverslag-technology" title="Startsemester-verdiepingsverslag-technology"><i class="fa fa-link"></i></a><strong>Startsemester verdiepingsverslag technology</strong></h1><p><img src="https://md.jeltad.com/uploads/upload_982cb61dbdb2dd227f8c7af40b29936c.png" alt="" class="md-image md-image"></p><p>Studentnaam: Jelle Tadema<br>
 Studentnummer: 5125820<br>
 Klas: P-DB01<br>
-Vakdocent: Rop Pulles</p><p>Versie: 1.1<br>
-Datum: 02-06-2023</p><hr><h1 id="Versiebeheer"><a class="anchor hidden-xs" href="#Versiebeheer" title="Versiebeheer"><i class="fa fa-link"></i></a>Versiebeheer</h1><table>
+Vakdocent: Rop Pulles</p><p>Versie: 1.2<br>
+Datum: 05-06-2023</p><hr><h1 id="Versiebeheer"><a class="anchor hidden-xs" href="#Versiebeheer" title="Versiebeheer"><i class="fa fa-link"></i></a>Versiebeheer</h1><table>
 <thead>
 <tr>
-<th>Versienummer</th>
+<th>Versie</th>
 <th>Datum</th>
 <th>Auteur</th>
 <th>Veranderingen</th>
@@ -114,6 +114,18 @@ Datum: 02-06-2023</p><hr><h1 id="Versiebeheer"><a class="anchor hidden-xs" href=
 <td>Jelle Tadema</td>
 <td>Afmaken auto 7 en beginnen aan 8</td>
 </tr>
+<tr>
+<td>1.2</td>
+<td>05-06-2023</td>
+<td>Jelle Tadema</td>
+<td>Afmaken 8 en begin aan 9</td>
+</tr>
+<tr>
+<td>1.3</td>
+<td>06-06-2023</td>
+<td>Jelle Tadema</td>
+<td>Verbeteren 8</td>
+</tr>
 </tbody>
 </table><hr><h1 id="Inhoudsopgave"><a class="anchor hidden-xs" href="#Inhoudsopgave" title="Inhoudsopgave"><i class="fa fa-link"></i></a>Inhoudsopgave</h1><p></p><div class="toc"><ul>
 <li><a href="#Startsemester-verdiepingsverslag-technology" title="Startsemester verdiepingsverslag technology">Startsemester verdiepingsverslag technology</a></li>
@@ -151,10 +163,14 @@ Datum: 02-06-2023</p><hr><h1 id="Versiebeheer"><a class="anchor hidden-xs" href=
 <li><a href="#Challenge-716-Timer-class-expert" title="Challenge 7.1.6 Timer class expert">Challenge 7.1.6 Timer class expert</a></li>
 <li><a href="#Challenge-717-Traffic-light-expert" title="Challenge 7.1.7 Traffic light expert">Challenge 7.1.7 Traffic light expert</a></li>
 <li><a href="#Challenge-718-Car-system-expert" title="Challenge 7.1.8 Car system expert">Challenge 7.1.8 Car system expert</a></li>
-<li><a href="#Challenge-821-PWM-LED" title="Challenge 8.2.1 PWM LED">Challenge 8.2.1 PWM LED</a></li>
 </ul>
 </li>
-<li><a href="#32-Sprint-3-eindproduct" title="3.2 Sprint 3: eindproduct">3.2 Sprint 3: eindproduct</a></li>
+<li><a href="#32-Sprint-3-eindproduct" title="3.2 Sprint 3: eindproduct">3.2 Sprint 3: eindproduct</a><ul>
+<li><a href="#Challenge-821-PWM-LED" title="Challenge 8.2.1 PWM LED">Challenge 8.2.1 PWM LED</a></li>
+<li><a href="#Challenge-822-Servo-control" title="Challenge 8.2.2 Servo control">Challenge 8.2.2 Servo control</a></li>
+<li><a href="#Challenge-911-Remote-control" title="Challenge 9.1.1 Remote control">Challenge 9.1.1 Remote control</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#4-Reflectie--evaluatie" title="4 Reflectie / evaluatie">4 Reflectie / evaluatie</a><ul>
@@ -597,11 +613,11 @@ Make your own timer class. Then use this timer class to improve the Blinking LED
 
   <span class="hljs-keyword">return</span> ret;
 }
-</code></pre><h4 id="Bronnen15"><a class="anchor hidden-xs" href="#Bronnen15" title="Bronnen15"><i class="fa fa-link"></i></a>Bronnen</h4><p><a href="https://docs.arduino.cc/learn/contributions/arduino-creating-library-guide" target="_blank" rel="noopener">https://docs.arduino.cc/learn/contributions/arduino-creating-library-guide</a></p><p><a href="https://stackoverflow.com/questions/55257571/how-to-define-class-constructor-inside-another-class-header-file" target="_blank" rel="noopener">https://stackoverflow.com/questions/55257571/how-to-define-class-constructor-inside-another-class-header-file</a></p><h3 id="Challenge-717-Traffic-light-expert"><a class="anchor hidden-xs" href="#Challenge-717-Traffic-light-expert" title="Challenge-717-Traffic-light-expert"><i class="fa fa-link"></i></a>Challenge 7.1.7 Traffic light expert</h3><h4 id="Beschrijving18"><a class="anchor hidden-xs" href="#Beschrijving18" title="Beschrijving18"><i class="fa fa-link"></i></a>Beschrijving</h4><p>Make a traffic light controller on the Arduino and use classes.</p><h4 id="Aanpak16"><a class="anchor hidden-xs" href="#Aanpak16" title="Aanpak16"><i class="fa fa-link"></i></a>Aanpak</h4><p>Ik ga de Led, Button en Timer klassen samenvoegen tot een stoplicht.</p><h4 id="Test-resultaat15"><a class="anchor hidden-xs" href="#Test-resultaat15" title="Test-resultaat15"><i class="fa fa-link"></i></a>Test resultaat</h4><p>Het stoplicht werkt zoals verwacht. Het stoplicht kan maar 1 kant tegelijkertijd op groen staan en ook het wordt opgeslagen als er een auto voor een rood licht staat te wachten wanneer het andere stoplicht op groen staat.</p><p><a href="https://www.youtube.com/watch?v=GMa87dUF4CA" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/GMa87dUF4CA/0.jpg" alt="" class="md-image md-image"></a></p><p><a href="https://www.youtube.com/watch?v=GMa87dUF4CA" target="_blank" rel="noopener">https://www.youtube.com/watch?v=GMa87dUF4CA</a></p><h4 id="Wat-heb-ik-geleerd18"><a class="anchor hidden-xs" href="#Wat-heb-ik-geleerd18" title="Wat-heb-ik-geleerd18"><i class="fa fa-link"></i></a>Wat heb ik geleerd?</h4><p>Ik heb extra oefening gehad met het maken en gerbuiken van classes in c++.</p><h4 id="Bronnen16"><a class="anchor hidden-xs" href="#Bronnen16" title="Bronnen16"><i class="fa fa-link"></i></a>Bronnen</h4><p><a href="https://docs.arduino.cc/learn/contributions/arduino-creating-library-guide" target="_blank" rel="noopener">https://docs.arduino.cc/learn/contributions/arduino-creating-library-guide</a></p><h3 id="Challenge-718-Car-system-expert"><a class="anchor hidden-xs" href="#Challenge-718-Car-system-expert" title="Challenge-718-Car-system-expert"><i class="fa fa-link"></i></a>Challenge 7.1.8 Car system expert</h3><h4 id="Beschrijving0"><a class="anchor hidden-xs" href="#Beschrijving0" title="Beschrijving0"><i class="fa fa-link"></i></a>Beschrijving</h4><p>If your are into OO programming on the Arduino simulate a car with two subsystems: (1) the steering wheel has three LED lights, two buttons, temperature sensor, light sensor and a potentiometer, and (2) the touch screen has two text fields and a list box. The steering wheel embeds an Arduino and a Rich shield, whereas the touch screen is a laptop with a Windows app. Both subsystems communicate with each other using a serial connection.</p><ul>
+</code></pre><h4 id="Bronnen15"><a class="anchor hidden-xs" href="#Bronnen15" title="Bronnen15"><i class="fa fa-link"></i></a>Bronnen</h4><p><a href="https://docs.arduino.cc/learn/contributions/arduino-creating-library-guide" target="_blank" rel="noopener">https://docs.arduino.cc/learn/contributions/arduino-creating-library-guide</a></p><p><a href="https://stackoverflow.com/questions/55257571/how-to-define-class-constructor-inside-another-class-header-file" target="_blank" rel="noopener">https://stackoverflow.com/questions/55257571/how-to-define-class-constructor-inside-another-class-header-file</a></p><h3 id="Challenge-717-Traffic-light-expert"><a class="anchor hidden-xs" href="#Challenge-717-Traffic-light-expert" title="Challenge-717-Traffic-light-expert"><i class="fa fa-link"></i></a>Challenge 7.1.7 Traffic light expert</h3><h4 id="Beschrijving18"><a class="anchor hidden-xs" href="#Beschrijving18" title="Beschrijving18"><i class="fa fa-link"></i></a>Beschrijving</h4><p>Make a traffic light controller on the Arduino and use classes.</p><h4 id="Aanpak16"><a class="anchor hidden-xs" href="#Aanpak16" title="Aanpak16"><i class="fa fa-link"></i></a>Aanpak</h4><p>Ik ga de Led, Button en Timer klassen samenvoegen tot een stoplicht.</p><h4 id="Test-resultaat15"><a class="anchor hidden-xs" href="#Test-resultaat15" title="Test-resultaat15"><i class="fa fa-link"></i></a>Test resultaat</h4><p>Het stoplicht werkt zoals verwacht. Het stoplicht kan maar 1 kant tegelijkertijd op groen staan en ook het wordt opgeslagen als er een auto voor een rood licht staat te wachten wanneer het andere stoplicht op groen staat.</p><p><a href="https://www.youtube.com/watch?v=GMa87dUF4CA" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/GMa87dUF4CA/0.jpg" alt="" class="md-image md-image"></a></p><p><a href="https://www.youtube.com/watch?v=GMa87dUF4CA" target="_blank" rel="noopener">https://www.youtube.com/watch?v=GMa87dUF4CA</a></p><h4 id="Wat-heb-ik-geleerd18"><a class="anchor hidden-xs" href="#Wat-heb-ik-geleerd18" title="Wat-heb-ik-geleerd18"><i class="fa fa-link"></i></a>Wat heb ik geleerd?</h4><p>Ik heb extra oefening gehad met het maken en gerbuiken van classes in c++.</p><h4 id="Bronnen16"><a class="anchor hidden-xs" href="#Bronnen16" title="Bronnen16"><i class="fa fa-link"></i></a>Bronnen</h4><p><a href="https://docs.arduino.cc/learn/contributions/arduino-creating-library-guide" target="_blank" rel="noopener">https://docs.arduino.cc/learn/contributions/arduino-creating-library-guide</a></p><h3 id="Challenge-718-Car-system-expert"><a class="anchor hidden-xs" href="#Challenge-718-Car-system-expert" title="Challenge-718-Car-system-expert"><i class="fa fa-link"></i></a>Challenge 7.1.8 Car system expert</h3><h4 id="Beschrijving19"><a class="anchor hidden-xs" href="#Beschrijving19" title="Beschrijving19"><i class="fa fa-link"></i></a>Beschrijving</h4><p>If your are into OO programming on the Arduino simulate a car with two subsystems: (1) the steering wheel has three LED lights, two buttons, temperature sensor, light sensor and a potentiometer, and (2) the touch screen has two text fields and a list box. The steering wheel embeds an Arduino and a Rich shield, whereas the touch screen is a laptop with a Windows app. Both subsystems communicate with each other using a serial connection.</p><ul>
 <li>The potentiometer simulates the steering wheel. You can use the full scale of the potentiometer.</li>
 <li>The two buttons are used to indicate in which direction the user want to turns. The left button lets the yellow LED blink until the user steers from the left to the centre (or a small percentage in the right half). The right button lets the blue LED blink until the user steers from the right to the centre (or a small percentage in the left half). This behaves like a real car. Be aware that the yellow and blue LEDs never blink at the same time.</li>
 <li>The headlights are automatic and they turn on when it’s dark, otherwise they’re off. The green LED simulates the headlights. The headlights may never flash due to a cloud.</li>
-</ul><p>The touch screen is a C#.net forms application. A text fields shows the temperature and headlight status. The list box is used to collect activities and acts as a black box of the car. You must determine what information is important to be collected.</p><h4 id="Aanpak0"><a class="anchor hidden-xs" href="#Aanpak0" title="Aanpak0"><i class="fa fa-link"></i></a>Aanpak</h4><p>Ik ga de ‘auto’ maken in c++ op de arduino. Via een serial print stuur ik de informatie door naar het c# progamma dat op mijn laptop draait en als ‘touchscreen’ functioneert. Ik heb ervoor gekozen om geen WinForm te maken, maar om een console app te gebruiken.</p><h4 id="Test-resultaat0"><a class="anchor hidden-xs" href="#Test-resultaat0" title="Test-resultaat0"><i class="fa fa-link"></i></a>Test resultaat</h4><p>De knipperlichten in combinatie met het sturen, de verlichting en het weergeven van de informatie met c# werkt zoals verwacht.</p><p><a href="https://www.youtube.com/watch?v=wzzjP2KuR5Y" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/wzzjP2KuR5Y/0.jpg" alt="" class="md-image md-image"></a></p><p><a href="https://www.youtube.com/watch?v=wzzjP2KuR5Y" target="_blank" rel="noopener">https://www.youtube.com/watch?v=wzzjP2KuR5Y</a></p><p><a href="https://www.youtube.com/watch?v=7nGurL7Y7AU" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/7nGurL7Y7AU/0.jpg" alt="" class="md-image md-image"></a></p><p><a href="https://www.youtube.com/watch?v=7nGurL7Y7AU" target="_blank" rel="noopener">https://www.youtube.com/watch?v=7nGurL7Y7AU</a></p><h4 id="Wat-heb-ik-geleerd0"><a class="anchor hidden-xs" href="#Wat-heb-ik-geleerd0" title="Wat-heb-ik-geleerd0"><i class="fa fa-link"></i></a>Wat heb ik geleerd?</h4><p>Ik heb geleerd hoe ik in c# informatie van een serial port kan lezen en gebruiken.</p><p>Het aanmaken van het object serial van de klasse SerialPort.</p><pre><code class="csharp hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+</ul><p>The touch screen is a C#.net forms application. A text fields shows the temperature and headlight status. The list box is used to collect activities and acts as a black box of the car. You must determine what information is important to be collected.</p><h4 id="Aanpak17"><a class="anchor hidden-xs" href="#Aanpak17" title="Aanpak17"><i class="fa fa-link"></i></a>Aanpak</h4><p>Ik ga de ‘auto’ maken in c++ op de arduino. Via een serial print stuur ik de informatie door naar het c# progamma dat op mijn laptop draait en als ‘touchscreen’ functioneert. Ik heb ervoor gekozen om geen WinForm te maken, maar om een console app te gebruiken.</p><h4 id="Test-resultaat16"><a class="anchor hidden-xs" href="#Test-resultaat16" title="Test-resultaat16"><i class="fa fa-link"></i></a>Test resultaat</h4><p>De knipperlichten in combinatie met het sturen, de verlichting en het weergeven van de informatie met c# werkt zoals verwacht.</p><p><a href="https://www.youtube.com/watch?v=wzzjP2KuR5Y" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/wzzjP2KuR5Y/0.jpg" alt="" class="md-image md-image"></a></p><p><a href="https://www.youtube.com/watch?v=wzzjP2KuR5Y" target="_blank" rel="noopener">https://www.youtube.com/watch?v=wzzjP2KuR5Y</a></p><p><a href="https://www.youtube.com/watch?v=7nGurL7Y7AU" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/7nGurL7Y7AU/0.jpg" alt="" class="md-image md-image"></a></p><p><a href="https://www.youtube.com/watch?v=7nGurL7Y7AU" target="_blank" rel="noopener">https://www.youtube.com/watch?v=7nGurL7Y7AU</a></p><h4 id="Wat-heb-ik-geleerd19"><a class="anchor hidden-xs" href="#Wat-heb-ik-geleerd19" title="Wat-heb-ik-geleerd19"><i class="fa fa-link"></i></a>Wat heb ik geleerd?</h4><p>Ik heb geleerd hoe ik in c# informatie van een serial port kan lezen en gebruiken.</p><p>Het aanmaken van het object serial van de klasse SerialPort.</p><pre><code class="csharp hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
 <span data-linenumber="2"></span>
 <span data-linenumber="3"></span>
 <span data-linenumber="4"></span>
@@ -617,11 +633,52 @@ L-ON
 T-25
 L-OFF
 L-ON
-</code></pre><h4 id="Bronnen0"><a class="anchor hidden-xs" href="#Bronnen0" title="Bronnen0"><i class="fa fa-link"></i></a>Bronnen</h4><p><a href="https://learn.microsoft.com/en-us/dotnet/api/system.io.ports.serialport.readline?view=dotnet-plat-ext-7.0" target="_blank" rel="noopener">https://learn.microsoft.com/en-us/dotnet/api/system.io.ports.serialport.readline?view=dotnet-plat-ext-7.0</a></p><h3 id="Challenge-821-PWM-LED"><a class="anchor hidden-xs" href="#Challenge-821-PWM-LED" title="Challenge-821-PWM-LED"><i class="fa fa-link"></i></a>Challenge 8.2.1 PWM LED</h3><h4 id="Beschrijving"><a class="anchor hidden-xs" href="#Beschrijving" title="Beschrijving"><i class="fa fa-link"></i></a>Beschrijving</h4><ul>
+</code></pre><h4 id="Bronnen17"><a class="anchor hidden-xs" href="#Bronnen17" title="Bronnen17"><i class="fa fa-link"></i></a>Bronnen</h4><p><a href="https://learn.microsoft.com/en-us/dotnet/api/system.io.ports.serialport.readline?view=dotnet-plat-ext-7.0" target="_blank" rel="noopener">https://learn.microsoft.com/en-us/dotnet/api/system.io.ports.serialport.readline?view=dotnet-plat-ext-7.0</a></p><h2 id="32-Sprint-3-eindproduct"><a class="anchor hidden-xs" href="#32-Sprint-3-eindproduct" title="32-Sprint-3-eindproduct"><i class="fa fa-link"></i></a>3.2 Sprint 3: eindproduct</h2><h3 id="Challenge-821-PWM-LED"><a class="anchor hidden-xs" href="#Challenge-821-PWM-LED" title="Challenge-821-PWM-LED"><i class="fa fa-link"></i></a>Challenge 8.2.1 PWM LED</h3><h4 id="Beschrijving20"><a class="anchor hidden-xs" href="#Beschrijving20" title="Beschrijving20"><i class="fa fa-link"></i></a>Beschrijving</h4><ul>
 <li>Connect a potentiometer and a LED to your Arduino.</li>
 <li>Write a program such that you can control the brightness of the LED with the potentiometer.</li>
 <li>Show your loop skills to create a light show using an RGB LED.  Use the potentiometer and buttons to change the behavior of the light show, e.g. the pattern, speed, brigthness.</li>
-</ul><p>Hint: you can use the map() function to determine the influence of the potentiometer.</p><h4 id="Aanpak"><a class="anchor hidden-xs" href="#Aanpak" title="Aanpak"><i class="fa fa-link"></i></a>Aanpak</h4><h4 id="Test-resultaat"><a class="anchor hidden-xs" href="#Test-resultaat" title="Test-resultaat"><i class="fa fa-link"></i></a>Test resultaat</h4><h4 id="Wat-heb-ik-geleerd"><a class="anchor hidden-xs" href="#Wat-heb-ik-geleerd" title="Wat-heb-ik-geleerd"><i class="fa fa-link"></i></a>Wat heb ik geleerd?</h4><h4 id="Bronnen"><a class="anchor hidden-xs" href="#Bronnen" title="Bronnen"><i class="fa fa-link"></i></a>Bronnen</h4><h2 id="32-Sprint-3-eindproduct"><a class="anchor hidden-xs" href="#32-Sprint-3-eindproduct" title="32-Sprint-3-eindproduct"><i class="fa fa-link"></i></a>3.2 Sprint 3: eindproduct</h2><blockquote>
+</ul><p>Hint: you can use the map() function to determine the influence of the potentiometer.</p><h4 id="Aanpak18"><a class="anchor hidden-xs" href="#Aanpak18" title="Aanpak18"><i class="fa fa-link"></i></a>Aanpak</h4><p>Ik ga de ledjes met een timer aan en uit laten gaan, de maximale lengte van de timer is in te stellen door een potmeter. Ook de helderheid van de led is in te stellen met een potmeter.</p><h4 id="Test-resultaat17"><a class="anchor hidden-xs" href="#Test-resultaat17" title="Test-resultaat17"><i class="fa fa-link"></i></a>Test resultaat</h4><p>De lichtshow werkt zoals verwacht.</p><p><a href="https://www.youtube.com/watch?v=tzrYmBHoQVk" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/tzrYmBHoQVk/0.jpg" alt="" class="md-image md-image"></a></p><p><a href="https://www.youtube.com/watch?v=tzrYmBHoQVk" target="_blank" rel="noopener">https://www.youtube.com/watch?v=tzrYmBHoQVk</a></p><h4 id="Wat-heb-ik-geleerd20"><a class="anchor hidden-xs" href="#Wat-heb-ik-geleerd20" title="Wat-heb-ik-geleerd20"><i class="fa fa-link"></i></a>Wat heb ik geleerd?</h4><p>Ik heb geleerd om gebruik te maken van de <code>random()</code> functie. Deze functie returned een random waarde. Ook kan je een minimale en een maximale waarde als parameter meegeven.</p><pre><code class="cpp hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span></div><div class="code"><span class="hljs-comment">// Kijen of de timer van de led voorbij is</span>
+<span class="hljs-keyword">if</span> (redTimer.passed()) {
+    <span class="hljs-comment">// De led aan/uit zetten. De brightness wordt meegegeven</span>
+    red.toggle(<span class="hljs-built_in">map</span>(analogRead(A1), <span class="hljs-number">0</span>, <span class="hljs-number">1023</span>, <span class="hljs-number">0</span>, <span class="hljs-number">255</span>));
+    <span class="hljs-comment">// De timer opnieuw starten met de waarde van de potmeter</span>
+    redTimer.start(random(<span class="hljs-number">0</span>, analogRead(A0)));
+}
+</div></div></code></pre><h4 id="Bronnen18"><a class="anchor hidden-xs" href="#Bronnen18" title="Bronnen18"><i class="fa fa-link"></i></a>Bronnen</h4><p><a href="https://reference.arduino.cc/reference/en/language/functions/random-numbers/random/" target="_blank" rel="noopener">https://reference.arduino.cc/reference/en/language/functions/random-numbers/random/</a></p><h3 id="Challenge-822-Servo-control"><a class="anchor hidden-xs" href="#Challenge-822-Servo-control" title="Challenge-822-Servo-control"><i class="fa fa-link"></i></a>Challenge 8.2.2 Servo control</h3><h4 id="Beschrijving21"><a class="anchor hidden-xs" href="#Beschrijving21" title="Beschrijving21"><i class="fa fa-link"></i></a>Beschrijving</h4><p>In this challenge you are going to control a servo with great precision. This is needed for example in robot assisted surgery.</p><ul>
+<li>Connect a servo and two sensors like a potentiometer. One sensor is for coarse control of the servo (to get it in roughly the right position) and the other one for fine (high precision) control to do the surgical movements.</li>
+<li>Write a program to control the servo with both sensors.</li>
+<li>Can you improve your program by make the servo control easier for a surgeon with shaking hands?</li>
+</ul><h4 id="Aanpak19"><a class="anchor hidden-xs" href="#Aanpak19" title="Aanpak19"><i class="fa fa-link"></i></a>Aanpak</h4><p>Ik ga de waardes van 2 potmeters bij elkaar optellen en dat naar de servo schrijven. De ene potmeter kan van 5 tot en met 175, en de tweede van -5 tot en met 5. Samen kan dit dan van 0 tot en met 180. Door de ene te draaien wordt de server ver verschoven, door de ander te draaien wordt de servo maar een klein beetje gedraaid.</p><h4 id="Test-resultaat18"><a class="anchor hidden-xs" href="#Test-resultaat18" title="Test-resultaat18"><i class="fa fa-link"></i></a>Test resultaat</h4><p>Het programma werkt zoals verwacht, behalve dat de servo soms uit zichzelf draait. Dit gedrag is er ook als je maar een keer een waarde naar de servo schrijft.</p><p><a href="https://www.youtube.com/watch?v=owr7LhSTS98" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/owr7LhSTS98/0.jpg" alt="" class="md-image md-image"></a></p><p><a href="https://www.youtube.com/watch?v=owr7LhSTS98" target="_blank" rel="noopener">https://www.youtube.com/watch?v=owr7LhSTS98</a></p><h4 id="Wat-heb-ik-geleerd21"><a class="anchor hidden-xs" href="#Wat-heb-ik-geleerd21" title="Wat-heb-ik-geleerd21"><i class="fa fa-link"></i></a>Wat heb ik geleerd?</h4><p>Hieronder staat de eerste versie van het progamma dat ik heb geschreven. Hier heb ik niets nieuws geleerd omdat ik dit in de oriëntatie al heb gedaan.</p><pre><code class="cpp hljs"><span class="hljs-comment">// Ik heb gemerkt dat de hoogste waarde van de potmeter niet bereikt wordt</span>
+<span class="hljs-keyword">int</span> general = <span class="hljs-built_in">map</span>(analogRead(GENERAL_PIN), <span class="hljs-number">0</span>, <span class="hljs-number">1023</span>, <span class="hljs-number">5</span>, <span class="hljs-number">176</span>);
+<span class="hljs-keyword">int</span> precise = <span class="hljs-built_in">map</span>(analogRead(PRECISE_PIN), <span class="hljs-number">0</span>, <span class="hljs-number">1023</span>, <span class="hljs-number">-5</span>, <span class="hljs-number">6</span>);
+servo.write(general + precise);
+</code></pre><p>Om mezelf uit te dagen heb ik geprobeerd om mijn eigen servo library te schrijven. Eerst heb ik onderzocht dat de servo die ik gebruik een PWM-signaal (voor een uitleg over PWM, zie mijn oriëntatieverslag) met een duty cycle tussen de 1 en 2 ms wil hebben op een frequency van 50 Hz. 50 Hz, dus elke 20 ms zou er een nieuw signaal gestuurd moeten worden, met een lengte tussen de 1 en 2 ms.</p><p>Bij het schrijven van een testversie van het programma ben ik erachter gekomen dat het niet consistent werkt. Ik heb ervoor gekozen om het schrijven van deze library niet voort te zetten omdat ik nog genoeg andere dingen moet doen en eigenlijk geen tijd over heb om hier in te steken.</p><pre><code class="cpp hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span></div><div class="code">digitalWrite(<span class="hljs-number">5</span>, HIGH);
+delayMicroseconds(<span class="hljs-number">1000</span>);
+digitalWrite(<span class="hljs-number">5</span>, LOW);
+delayMicroseconds(<span class="hljs-number">19000</span>);
+</div></div></code></pre><h4 id="Bronnen0"><a class="anchor hidden-xs" href="#Bronnen0" title="Bronnen0"><i class="fa fa-link"></i></a>Bronnen</h4><p><a href="http://www.ee.ic.ac.uk/pcheung/teaching/DE1_EE/stores/sg90_datasheet.pdf" target="_blank" rel="noopener">http://www.ee.ic.ac.uk/pcheung/teaching/DE1_EE/stores/sg90_datasheet.pdf</a></p><p><a href="https://cdn.arduino.cc/reference/en/language/functions/math/constrain/" target="_blank" rel="noopener">https://cdn.arduino.cc/reference/en/language/functions/math/constrain/</a></p><p><a href="https://cdn.arduino.cc/reference/en/language/functions/analog-io/analogwrite/" target="_blank" rel="noopener">https://cdn.arduino.cc/reference/en/language/functions/analog-io/analogwrite/</a></p><h3 id="Challenge-911-Remote-control"><a class="anchor hidden-xs" href="#Challenge-911-Remote-control" title="Challenge-911-Remote-control"><i class="fa fa-link"></i></a>Challenge 9.1.1 Remote control</h3><h4 id="Beschrijving"><a class="anchor hidden-xs" href="#Beschrijving" title="Beschrijving"><i class="fa fa-link"></i></a>Beschrijving</h4><p>In the orientation phase you got acquainted with receiving a (serial) message from a PC.</p><ul>
+<li>If needed you can take a look at the following link again <a href="https://www.arduino.cc/reference/en/language/functions/communication/serial/read/" target="_blank" rel="noopener">https://www.arduino.cc/reference/en/language/functions/communication/serial/read/</a>.</li>
+<li>Take a look at the workshop Serial communication with the Arduino in the Toolbox section of this course.</li>
+<li>Now you will remote control a (red) LED connected to the Arduino from the PC using messages that meet an agreed format. When the Arduino receives the message “#SET_ LED_ON%” from the serial port, the LED will be turned on. Use the String type on the Arduino to save and compare a received message. For String usage, see <a href="http://arduino.cc/en/Reference/StringObject" target="_blank" rel="noopener">http://arduino.cc/en/Reference/StringObject</a>.</li>
+<li>What are the ‘#’ and ‘%’ characters for?</li>
+<li>Extend your program with two other LEDS and modify your code so that you have a working ‘traffic light’.</li>
+<li>Make sure that your ‘traffic light’ can be controlled from your PC. Use a command with a parameter like "#SET_ LED:&lt;on_off, led_color&gt;%”</li>
+<li>Make sure that your program handles unknown values for led_color and that the sender of the message is informed that the value is unknown</li>
+</ul><p>Hints:</p><ul>
+<li>Use the Serial Monitor in PlatformIO to send messages to the Arduino. With the Serial Monitor you can always test the serial communication.</li>
+<li>You can use String.startsWith(…) to determine the type of message.</li>
+<li>You can use String.substring() to ‘cut out’ the number (the parameter).</li>
+<li>A text to int conversion function is provided.</li>
+</ul><h4 id="Aanpak"><a class="anchor hidden-xs" href="#Aanpak" title="Aanpak"><i class="fa fa-link"></i></a>Aanpak</h4><h4 id="Test-resultaat"><a class="anchor hidden-xs" href="#Test-resultaat" title="Test-resultaat"><i class="fa fa-link"></i></a>Test resultaat</h4><h4 id="Wat-heb-ik-geleerd"><a class="anchor hidden-xs" href="#Wat-heb-ik-geleerd" title="Wat-heb-ik-geleerd"><i class="fa fa-link"></i></a>Wat heb ik geleerd?</h4><h4 id="Bronnen"><a class="anchor hidden-xs" href="#Bronnen" title="Bronnen"><i class="fa fa-link"></i></a>Bronnen</h4><blockquote>
 <p>Template</p>
 </blockquote><pre><code class="md hljs">## <span class="hljs-number">3.0</span> Sprint <span class="hljs-number">0</span>: x
 
@@ -651,45 +708,49 @@ L-ON
             </a>
             <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
                 <div class="toc"><ul class="nav">
-<li class=""><a href="#Startsemester-verdiepingsverslag-technology" title="Startsemester verdiepingsverslag technology">Startsemester verdiepingsverslag technology</a></li>
+<li><a href="#Startsemester-verdiepingsverslag-technology" title="Startsemester verdiepingsverslag technology">Startsemester verdiepingsverslag technology</a></li>
 <li class=""><a href="#Versiebeheer" title="Versiebeheer">Versiebeheer</a></li>
 <li><a href="#Inhoudsopgave" title="Inhoudsopgave">Inhoudsopgave</a></li>
-<li><a href="#1-Inleiding" title="1 Inleiding">1 Inleiding</a><ul class="nav">
-<li><a href="#11-Aanleiding" title="1.1 Aanleiding">1.1 Aanleiding</a></li>
+<li class=""><a href="#1-Inleiding" title="1 Inleiding">1 Inleiding</a><ul class="nav">
+<li class=""><a href="#11-Aanleiding" title="1.1 Aanleiding">1.1 Aanleiding</a></li>
 <li><a href="#12-Onderwerp" title="1.2 Onderwerp">1.2 Onderwerp</a></li>
 <li><a href="#13-Leeswijzer" title="1.3 Leeswijzer">1.3 Leeswijzer</a></li>
 </ul>
 </li>
-<li><a href="#2-Introductie" title="2 Introductie">2 Introductie</a></li>
-<li><a href="#3-Aantonen-leerdoelen" title="3 Aantonen leerdoelen">3 Aantonen leerdoelen</a><ul class="nav">
-<li><a href="#31-Sprint-1-proof-of-concepts" title="3.1 Sprint 1: proof of concepts">3.1 Sprint 1: proof of concepts</a><ul class="nav">
-<li><a href="#Challenge-221-Arduino-pinout" title="Challenge 2.2.1 Arduino pinout">Challenge 2.2.1 Arduino pinout</a></li>
-<li><a href="#Challenge-251-Tinkercad-circuit" title="Challenge 2.5.1 Tinkercad circuit">Challenge 2.5.1 Tinkercad circuit</a></li>
-<li><a href="#Challenge-252-Breadboard-circuit" title="Challenge 2.5.2 Breadboard circuit">Challenge 2.5.2 Breadboard circuit</a></li>
-<li><a href="#Challenge-321-Blinking-led" title="Challenge 3.2.1 Blinking led">Challenge 3.2.1 Blinking led</a></li>
-<li><a href="#Challenge-323-Button-function" title="Challenge 3.2.3 Button function">Challenge 3.2.3 Button function</a></li>
-<li><a href="#Challenge-331-State-machine-expert" title="Challenge 3.3.1 State machine expert">Challenge 3.3.1 State machine expert</a></li>
-<li><a href="#Challenge-411-IO-techniques" title="Challenge 4.1.1 I/O techniques">Challenge 4.1.1 I/O techniques</a></li>
-<li><a href="#Challenge-521-Analog-sensor-and-Serial-Plotter" title="Challenge 5.2.1 Analog sensor and Serial Plotter">Challenge 5.2.1 Analog sensor and Serial Plotter</a></li>
-<li><a href="#Challenge-522-LDR-sensor" title="Challenge 5.2.2 LDR sensor">Challenge 5.2.2 LDR sensor</a></li>
-<li><a href="#Challenge-523-Scaling" title="Challenge 5.2.3 Scaling">Challenge 5.2.3 Scaling</a></li>
-<li><a href="#Challenge-524-Running-average" title="Challenge 5.2.4 Running average">Challenge 5.2.4 Running average</a></li>
-<li><a href="#Challenge-525-Hysteresis" title="Challenge 5.2.5 Hysteresis">Challenge 5.2.5 Hysteresis</a></li>
-<li><a href="#Challenge-611-DHT-Library" title="Challenge 6.1.1 DHT Library">Challenge 6.1.1 DHT Library</a></li>
-<li><a href="#Challenge-612-Ping-sensor-library" title="Challenge 6.1.2 Ping sensor library">Challenge 6.1.2 Ping sensor library</a></li>
+<li class=""><a href="#2-Introductie" title="2 Introductie">2 Introductie</a></li>
+<li class=""><a href="#3-Aantonen-leerdoelen" title="3 Aantonen leerdoelen">3 Aantonen leerdoelen</a><ul class="nav">
+<li class=""><a href="#31-Sprint-1-proof-of-concepts" title="3.1 Sprint 1: proof of concepts">3.1 Sprint 1: proof of concepts</a><ul class="nav">
+<li class=""><a href="#Challenge-221-Arduino-pinout" title="Challenge 2.2.1 Arduino pinout">Challenge 2.2.1 Arduino pinout</a></li>
+<li class=""><a href="#Challenge-251-Tinkercad-circuit" title="Challenge 2.5.1 Tinkercad circuit">Challenge 2.5.1 Tinkercad circuit</a></li>
+<li class=""><a href="#Challenge-252-Breadboard-circuit" title="Challenge 2.5.2 Breadboard circuit">Challenge 2.5.2 Breadboard circuit</a></li>
+<li class=""><a href="#Challenge-321-Blinking-led" title="Challenge 3.2.1 Blinking led">Challenge 3.2.1 Blinking led</a></li>
+<li class=""><a href="#Challenge-323-Button-function" title="Challenge 3.2.3 Button function">Challenge 3.2.3 Button function</a></li>
+<li class=""><a href="#Challenge-331-State-machine-expert" title="Challenge 3.3.1 State machine expert">Challenge 3.3.1 State machine expert</a></li>
+<li class=""><a href="#Challenge-411-IO-techniques" title="Challenge 4.1.1 I/O techniques">Challenge 4.1.1 I/O techniques</a></li>
+<li class=""><a href="#Challenge-521-Analog-sensor-and-Serial-Plotter" title="Challenge 5.2.1 Analog sensor and Serial Plotter">Challenge 5.2.1 Analog sensor and Serial Plotter</a></li>
+<li class=""><a href="#Challenge-522-LDR-sensor" title="Challenge 5.2.2 LDR sensor">Challenge 5.2.2 LDR sensor</a></li>
+<li class=""><a href="#Challenge-523-Scaling" title="Challenge 5.2.3 Scaling">Challenge 5.2.3 Scaling</a></li>
+<li class=""><a href="#Challenge-524-Running-average" title="Challenge 5.2.4 Running average">Challenge 5.2.4 Running average</a></li>
+<li class=""><a href="#Challenge-525-Hysteresis" title="Challenge 5.2.5 Hysteresis">Challenge 5.2.5 Hysteresis</a></li>
+<li class=""><a href="#Challenge-611-DHT-Library" title="Challenge 6.1.1 DHT Library">Challenge 6.1.1 DHT Library</a></li>
+<li class=""><a href="#Challenge-612-Ping-sensor-library" title="Challenge 6.1.2 Ping sensor library">Challenge 6.1.2 Ping sensor library</a></li>
 </ul>
 </li>
-<li><a href="#32-Sprint-2-tussenproduct" title="3.2 Sprint 2: tussenproduct">3.2 Sprint 2: tussenproduct</a><ul class="nav">
-<li><a href="#Challenge-712-Traffic-light" title="Challenge 7.1.2 Traffic light">Challenge 7.1.2 Traffic light</a></li>
-<li><a href="#Challenge-714-LED-class-expert" title="Challenge 7.1.4 LED class expert">Challenge 7.1.4 LED class expert</a></li>
-<li><a href="#Challenge-715-Button-class-expert" title="Challenge 7.1.5 Button class expert">Challenge 7.1.5 Button class expert</a></li>
-<li><a href="#Challenge-716-Timer-class-expert" title="Challenge 7.1.6 Timer class expert">Challenge 7.1.6 Timer class expert</a></li>
-<li><a href="#Challenge-717-Traffic-light-expert" title="Challenge 7.1.7 Traffic light expert">Challenge 7.1.7 Traffic light expert</a></li>
-<li><a href="#Challenge-718-Car-system-expert" title="Challenge 7.1.8 Car system expert">Challenge 7.1.8 Car system expert</a></li>
-<li><a href="#Challenge-821-PWM-LED" title="Challenge 8.2.1 PWM LED">Challenge 8.2.1 PWM LED</a></li>
+<li class=""><a href="#32-Sprint-2-tussenproduct" title="3.2 Sprint 2: tussenproduct">3.2 Sprint 2: tussenproduct</a><ul class="nav">
+<li class=""><a href="#Challenge-712-Traffic-light" title="Challenge 7.1.2 Traffic light">Challenge 7.1.2 Traffic light</a></li>
+<li class=""><a href="#Challenge-714-LED-class-expert" title="Challenge 7.1.4 LED class expert">Challenge 7.1.4 LED class expert</a></li>
+<li class=""><a href="#Challenge-715-Button-class-expert" title="Challenge 7.1.5 Button class expert">Challenge 7.1.5 Button class expert</a></li>
+<li class=""><a href="#Challenge-716-Timer-class-expert" title="Challenge 7.1.6 Timer class expert">Challenge 7.1.6 Timer class expert</a></li>
+<li class=""><a href="#Challenge-717-Traffic-light-expert" title="Challenge 7.1.7 Traffic light expert">Challenge 7.1.7 Traffic light expert</a></li>
+<li class=""><a href="#Challenge-718-Car-system-expert" title="Challenge 7.1.8 Car system expert">Challenge 7.1.8 Car system expert</a></li>
 </ul>
 </li>
-<li><a href="#32-Sprint-3-eindproduct" title="3.2 Sprint 3: eindproduct">3.2 Sprint 3: eindproduct</a></li>
+<li class=""><a href="#32-Sprint-3-eindproduct" title="3.2 Sprint 3: eindproduct">3.2 Sprint 3: eindproduct</a><ul class="nav">
+<li class=""><a href="#Challenge-821-PWM-LED" title="Challenge 8.2.1 PWM LED">Challenge 8.2.1 PWM LED</a></li>
+<li class=""><a href="#Challenge-822-Servo-control" title="Challenge 8.2.2 Servo control">Challenge 8.2.2 Servo control</a></li>
+<li class=""><a href="#Challenge-911-Remote-control" title="Challenge 9.1.1 Remote control">Challenge 9.1.1 Remote control</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#4-Reflectie--evaluatie" title="4 Reflectie / evaluatie">4 Reflectie / evaluatie</a><ul class="nav">
@@ -705,45 +766,49 @@ L-ON
     </div>
     <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
         <div class="toc"><ul class="nav">
-<li class=""><a href="#Startsemester-verdiepingsverslag-technology" title="Startsemester verdiepingsverslag technology">Startsemester verdiepingsverslag technology</a></li>
+<li><a href="#Startsemester-verdiepingsverslag-technology" title="Startsemester verdiepingsverslag technology">Startsemester verdiepingsverslag technology</a></li>
 <li class=""><a href="#Versiebeheer" title="Versiebeheer">Versiebeheer</a></li>
 <li><a href="#Inhoudsopgave" title="Inhoudsopgave">Inhoudsopgave</a></li>
-<li><a href="#1-Inleiding" title="1 Inleiding">1 Inleiding</a><ul class="nav">
-<li><a href="#11-Aanleiding" title="1.1 Aanleiding">1.1 Aanleiding</a></li>
+<li class=""><a href="#1-Inleiding" title="1 Inleiding">1 Inleiding</a><ul class="nav">
+<li class=""><a href="#11-Aanleiding" title="1.1 Aanleiding">1.1 Aanleiding</a></li>
 <li><a href="#12-Onderwerp" title="1.2 Onderwerp">1.2 Onderwerp</a></li>
 <li><a href="#13-Leeswijzer" title="1.3 Leeswijzer">1.3 Leeswijzer</a></li>
 </ul>
 </li>
-<li><a href="#2-Introductie" title="2 Introductie">2 Introductie</a></li>
-<li><a href="#3-Aantonen-leerdoelen" title="3 Aantonen leerdoelen">3 Aantonen leerdoelen</a><ul class="nav">
-<li><a href="#31-Sprint-1-proof-of-concepts" title="3.1 Sprint 1: proof of concepts">3.1 Sprint 1: proof of concepts</a><ul class="nav">
-<li><a href="#Challenge-221-Arduino-pinout" title="Challenge 2.2.1 Arduino pinout">Challenge 2.2.1 Arduino pinout</a></li>
-<li><a href="#Challenge-251-Tinkercad-circuit" title="Challenge 2.5.1 Tinkercad circuit">Challenge 2.5.1 Tinkercad circuit</a></li>
-<li><a href="#Challenge-252-Breadboard-circuit" title="Challenge 2.5.2 Breadboard circuit">Challenge 2.5.2 Breadboard circuit</a></li>
-<li><a href="#Challenge-321-Blinking-led" title="Challenge 3.2.1 Blinking led">Challenge 3.2.1 Blinking led</a></li>
-<li><a href="#Challenge-323-Button-function" title="Challenge 3.2.3 Button function">Challenge 3.2.3 Button function</a></li>
-<li><a href="#Challenge-331-State-machine-expert" title="Challenge 3.3.1 State machine expert">Challenge 3.3.1 State machine expert</a></li>
-<li><a href="#Challenge-411-IO-techniques" title="Challenge 4.1.1 I/O techniques">Challenge 4.1.1 I/O techniques</a></li>
-<li><a href="#Challenge-521-Analog-sensor-and-Serial-Plotter" title="Challenge 5.2.1 Analog sensor and Serial Plotter">Challenge 5.2.1 Analog sensor and Serial Plotter</a></li>
-<li><a href="#Challenge-522-LDR-sensor" title="Challenge 5.2.2 LDR sensor">Challenge 5.2.2 LDR sensor</a></li>
-<li><a href="#Challenge-523-Scaling" title="Challenge 5.2.3 Scaling">Challenge 5.2.3 Scaling</a></li>
-<li><a href="#Challenge-524-Running-average" title="Challenge 5.2.4 Running average">Challenge 5.2.4 Running average</a></li>
-<li><a href="#Challenge-525-Hysteresis" title="Challenge 5.2.5 Hysteresis">Challenge 5.2.5 Hysteresis</a></li>
-<li><a href="#Challenge-611-DHT-Library" title="Challenge 6.1.1 DHT Library">Challenge 6.1.1 DHT Library</a></li>
-<li><a href="#Challenge-612-Ping-sensor-library" title="Challenge 6.1.2 Ping sensor library">Challenge 6.1.2 Ping sensor library</a></li>
+<li class=""><a href="#2-Introductie" title="2 Introductie">2 Introductie</a></li>
+<li class=""><a href="#3-Aantonen-leerdoelen" title="3 Aantonen leerdoelen">3 Aantonen leerdoelen</a><ul class="nav">
+<li class=""><a href="#31-Sprint-1-proof-of-concepts" title="3.1 Sprint 1: proof of concepts">3.1 Sprint 1: proof of concepts</a><ul class="nav">
+<li class=""><a href="#Challenge-221-Arduino-pinout" title="Challenge 2.2.1 Arduino pinout">Challenge 2.2.1 Arduino pinout</a></li>
+<li class=""><a href="#Challenge-251-Tinkercad-circuit" title="Challenge 2.5.1 Tinkercad circuit">Challenge 2.5.1 Tinkercad circuit</a></li>
+<li class=""><a href="#Challenge-252-Breadboard-circuit" title="Challenge 2.5.2 Breadboard circuit">Challenge 2.5.2 Breadboard circuit</a></li>
+<li class=""><a href="#Challenge-321-Blinking-led" title="Challenge 3.2.1 Blinking led">Challenge 3.2.1 Blinking led</a></li>
+<li class=""><a href="#Challenge-323-Button-function" title="Challenge 3.2.3 Button function">Challenge 3.2.3 Button function</a></li>
+<li class=""><a href="#Challenge-331-State-machine-expert" title="Challenge 3.3.1 State machine expert">Challenge 3.3.1 State machine expert</a></li>
+<li class=""><a href="#Challenge-411-IO-techniques" title="Challenge 4.1.1 I/O techniques">Challenge 4.1.1 I/O techniques</a></li>
+<li class=""><a href="#Challenge-521-Analog-sensor-and-Serial-Plotter" title="Challenge 5.2.1 Analog sensor and Serial Plotter">Challenge 5.2.1 Analog sensor and Serial Plotter</a></li>
+<li class=""><a href="#Challenge-522-LDR-sensor" title="Challenge 5.2.2 LDR sensor">Challenge 5.2.2 LDR sensor</a></li>
+<li class=""><a href="#Challenge-523-Scaling" title="Challenge 5.2.3 Scaling">Challenge 5.2.3 Scaling</a></li>
+<li class=""><a href="#Challenge-524-Running-average" title="Challenge 5.2.4 Running average">Challenge 5.2.4 Running average</a></li>
+<li class=""><a href="#Challenge-525-Hysteresis" title="Challenge 5.2.5 Hysteresis">Challenge 5.2.5 Hysteresis</a></li>
+<li class=""><a href="#Challenge-611-DHT-Library" title="Challenge 6.1.1 DHT Library">Challenge 6.1.1 DHT Library</a></li>
+<li class=""><a href="#Challenge-612-Ping-sensor-library" title="Challenge 6.1.2 Ping sensor library">Challenge 6.1.2 Ping sensor library</a></li>
 </ul>
 </li>
-<li><a href="#32-Sprint-2-tussenproduct" title="3.2 Sprint 2: tussenproduct">3.2 Sprint 2: tussenproduct</a><ul class="nav">
-<li><a href="#Challenge-712-Traffic-light" title="Challenge 7.1.2 Traffic light">Challenge 7.1.2 Traffic light</a></li>
-<li><a href="#Challenge-714-LED-class-expert" title="Challenge 7.1.4 LED class expert">Challenge 7.1.4 LED class expert</a></li>
-<li><a href="#Challenge-715-Button-class-expert" title="Challenge 7.1.5 Button class expert">Challenge 7.1.5 Button class expert</a></li>
-<li><a href="#Challenge-716-Timer-class-expert" title="Challenge 7.1.6 Timer class expert">Challenge 7.1.6 Timer class expert</a></li>
-<li><a href="#Challenge-717-Traffic-light-expert" title="Challenge 7.1.7 Traffic light expert">Challenge 7.1.7 Traffic light expert</a></li>
-<li><a href="#Challenge-718-Car-system-expert" title="Challenge 7.1.8 Car system expert">Challenge 7.1.8 Car system expert</a></li>
-<li><a href="#Challenge-821-PWM-LED" title="Challenge 8.2.1 PWM LED">Challenge 8.2.1 PWM LED</a></li>
+<li class=""><a href="#32-Sprint-2-tussenproduct" title="3.2 Sprint 2: tussenproduct">3.2 Sprint 2: tussenproduct</a><ul class="nav">
+<li class=""><a href="#Challenge-712-Traffic-light" title="Challenge 7.1.2 Traffic light">Challenge 7.1.2 Traffic light</a></li>
+<li class=""><a href="#Challenge-714-LED-class-expert" title="Challenge 7.1.4 LED class expert">Challenge 7.1.4 LED class expert</a></li>
+<li class=""><a href="#Challenge-715-Button-class-expert" title="Challenge 7.1.5 Button class expert">Challenge 7.1.5 Button class expert</a></li>
+<li class=""><a href="#Challenge-716-Timer-class-expert" title="Challenge 7.1.6 Timer class expert">Challenge 7.1.6 Timer class expert</a></li>
+<li class=""><a href="#Challenge-717-Traffic-light-expert" title="Challenge 7.1.7 Traffic light expert">Challenge 7.1.7 Traffic light expert</a></li>
+<li class=""><a href="#Challenge-718-Car-system-expert" title="Challenge 7.1.8 Car system expert">Challenge 7.1.8 Car system expert</a></li>
 </ul>
 </li>
-<li><a href="#32-Sprint-3-eindproduct" title="3.2 Sprint 3: eindproduct">3.2 Sprint 3: eindproduct</a></li>
+<li class=""><a href="#32-Sprint-3-eindproduct" title="3.2 Sprint 3: eindproduct">3.2 Sprint 3: eindproduct</a><ul class="nav">
+<li class=""><a href="#Challenge-821-PWM-LED" title="Challenge 8.2.1 PWM LED">Challenge 8.2.1 PWM LED</a></li>
+<li class=""><a href="#Challenge-822-Servo-control" title="Challenge 8.2.2 Servo control">Challenge 8.2.2 Servo control</a></li>
+<li class=""><a href="#Challenge-911-Remote-control" title="Challenge 9.1.1 Remote control">Challenge 9.1.1 Remote control</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#4-Reflectie--evaluatie" title="4 Reflectie / evaluatie">4 Reflectie / evaluatie</a><ul class="nav">
