@@ -212,7 +212,7 @@ Datum: 13-06-2023</p><hr><h1 id="Versiebeheer"><a class="anchor hidden-xs" href=
 <td>Analoog: 2.5.1 - 2.5.2- … 10.0.0<br>PWM: 2.5.1 … 10.0.0</td>
 </tr>
 </tbody>
-</table><h2 id="31-Sprint-1-proof-of-concepts"><a class="anchor hidden-xs" href="#31-Sprint-1-proof-of-concepts" title="31-Sprint-1-proof-of-concepts"><i class="fa fa-link"></i></a>3.1 Sprint 1: proof of concepts</h2><h3 id="Challenge-221-Arduino-pinout"><a class="anchor hidden-xs" href="#Challenge-221-Arduino-pinout" title="Challenge-221-Arduino-pinout"><i class="fa fa-link"></i></a>Challenge 2.2.1 Arduino pinout</h3><h4 id="Beschrijving"><a class="anchor hidden-xs" href="#Beschrijving" title="Beschrijving"><i class="fa fa-link"></i></a>Beschrijving</h4><p>Find a comprehensive picture of the Arduino Uno board layout which you can use for your future projects.</p><h4 id="Aanpak"><a class="anchor hidden-xs" href="#Aanpak" title="Aanpak"><i class="fa fa-link"></i></a>Aanpak</h4><p>Voor deze opdracht ga ik op zoek naar een afbeelding met de functie van alle pinnen erbij van de arduino uno.</p><h4 id="Test-resultaat"><a class="anchor hidden-xs" href="#Test-resultaat" title="Test-resultaat"><i class="fa fa-link"></i></a>Test resultaat</h4><p><img src="https://md.jeltad.com/uploads/upload_e95f88152f3cdef0fe08be54e827310a.png" alt="" class="md-image md-image"></p><h4 id="Wat-heb-ik-geleerd"><a class="anchor hidden-xs" href="#Wat-heb-ik-geleerd" title="Wat-heb-ik-geleerd"><i class="fa fa-link"></i></a>Wat heb ik geleerd?</h4><p>Bij deze challenge heb ik geleerd welke pinnen van de arduino bepaalde functies hebben en welke niet. Zo zijn links onder de pinnen voor analoge input en de pinnen met een tilde ervoor zijn de pinnen voor PWM output.</p><h4 id="Bronnen"><a class="anchor hidden-xs" href="#Bronnen" title="Bronnen"><i class="fa fa-link"></i></a>Bronnen</h4><p><a href="https://docs.arduino.cc/retired/boards/arduino-uno-rev3-with-long-pins" target="_blank" rel="noopener">https://docs.arduino.cc/retired/boards/arduino-uno-rev3-with-long-pins</a></p><h3 id="Challenge-251-Tinkercad-circuit"><a class="anchor hidden-xs" href="#Challenge-251-Tinkercad-circuit" title="Challenge-251-Tinkercad-circuit"><i class="fa fa-link"></i></a>Challenge 2.5.1 Tinkercad circuit</h3><h4 id="Beschrijving1"><a class="anchor hidden-xs" href="#Beschrijving1" title="Beschrijving1"><i class="fa fa-link"></i></a>Beschrijving</h4><p>Use TinkerCad <a href="https://www.tinkercad.com/" target="_blank" rel="noopener">https://www.tinkercad.com/</a> to create the following circuits:</p><ul>
+</table><h2 id="31-Sprint-1-proof-of-concepts"><a class="anchor hidden-xs" href="#31-Sprint-1-proof-of-concepts" title="31-Sprint-1-proof-of-concepts"><i class="fa fa-link"></i></a>3.1 Sprint 1: proof of concepts</h2><h3 id="Challenge-221-Arduino-pinout"><a class="anchor hidden-xs" href="#Challenge-221-Arduino-pinout" title="Challenge-221-Arduino-pinout"><i class="fa fa-link"></i></a>Challenge 2.2.1 Arduino pinout</h3><h4 id="Beschrijving"><a class="anchor hidden-xs" href="#Beschrijving" title="Beschrijving"><i class="fa fa-link"></i></a>Beschrijving</h4><p>Find a comprehensive picture of the Arduino Uno board layout which you can use for your future projects.</p><h4 id="Aanpak"><a class="anchor hidden-xs" href="#Aanpak" title="Aanpak"><i class="fa fa-link"></i></a>Aanpak</h4><p>Voor deze opdracht ga ik op zoek naar een afbeelding met de functie van alle pinnen erbij van de arduino uno.</p><h4 id="Test-resultaat"><a class="anchor hidden-xs" href="#Test-resultaat" title="Test-resultaat"><i class="fa fa-link"></i></a>Test resultaat</h4><p><img src="https://md.jeltad.com/uploads/upload_e95f88152f3cdef0fe08be54e827310a.png" alt="" class="md-image md-image"></p><h4 id="Wat-heb-ik-geleerd"><a class="anchor hidden-xs" href="#Wat-heb-ik-geleerd" title="Wat-heb-ik-geleerd"><i class="fa fa-link"></i></a>Wat heb ik geleerd?</h4><p>Bij deze challenge heb ik geleerd welke pinnen van de arduino bepaalde functies hebben en welke niet. Zo zijn links onder de pinnen voor analoge input en de pinnen met een tilde ervoor zijn de pinnen voor PWM output.</p><h4 id="Bronnen0"><a class="anchor hidden-xs" href="#Bronnen0" title="Bronnen0"><i class="fa fa-link"></i></a>Bronnen</h4><p><a href="https://docs.arduino.cc/retired/boards/arduino-uno-rev3-with-long-pins" target="_blank" rel="noopener">https://docs.arduino.cc/retired/boards/arduino-uno-rev3-with-long-pins</a></p><h3 id="Challenge-251-Tinkercad-circuit"><a class="anchor hidden-xs" href="#Challenge-251-Tinkercad-circuit" title="Challenge-251-Tinkercad-circuit"><i class="fa fa-link"></i></a>Challenge 2.5.1 Tinkercad circuit</h3><h4 id="Beschrijving1"><a class="anchor hidden-xs" href="#Beschrijving1" title="Beschrijving1"><i class="fa fa-link"></i></a>Beschrijving</h4><p>Use TinkerCad <a href="https://www.tinkercad.com/" target="_blank" rel="noopener">https://www.tinkercad.com/</a> to create the following circuits:</p><ul>
 <li>LED which can be controlled with a digital output pin.</li>
 <li>Button which can be read with a digital input pin.</li>
 <li>Potentiometer which can be read using an analog input.</li>
@@ -748,7 +748,100 @@ communicationThread.Start();
         }
     }
 }
-</div></div></code></pre><p>Daarnaast heb ik geleerd hoe ik een communicatieprotocol kan opstellen om tussen verschillende systemen te kunnen communiceren. Net als in het voorbeeld bestaat mijn protocol uit een beginkarakter, een parameter karakter en een eindkarakter. Het eerste karakter (na het begin) is waar het over gaat en in de parameter staat wat er moet gebeuren / welke state er aangenomen moet worden. Zo zet <code>!B-0?</code> de knipperlichten van de auto uit.</p><h4 id="Bronnen21"><a class="anchor hidden-xs" href="#Bronnen21" title="Bronnen21"><i class="fa fa-link"></i></a>Bronnen</h4><p><a href="https://www.csharp-examples.net/create-new-thread/" target="_blank" rel="noopener">https://www.csharp-examples.net/create-new-thread/</a></p><p><a href="https://www.geeksforgeeks.org/c-sharp-constructor-overloading/" target="_blank" rel="noopener">https://www.geeksforgeeks.org/c-sharp-constructor-overloading/</a></p><p><a href="https://www.programiz.com/csharp-programming/method-overloading" target="_blank" rel="noopener">https://www.programiz.com/csharp-programming/method-overloading</a></p><p><a href="https://git.fhict.nl/technology/t-sem1/-/tree/master/Verdieping/Toolbox" target="_blank" rel="noopener">Working document Verdieping</a></p><hr><h1 id="4-Reflectie--evaluatie"><a class="anchor hidden-xs" href="#4-Reflectie--evaluatie" title="4-Reflectie--evaluatie"><i class="fa fa-link"></i></a>4 Reflectie / evaluatie</h1><h2 id="41-Waar-ben-ik-trots-op"><a class="anchor hidden-xs" href="#41-Waar-ben-ik-trots-op" title="41-Waar-ben-ik-trots-op"><i class="fa fa-link"></i></a>4.1 Waar ben ik trots op?</h2><p>Ik ben trots op de programma’s die ik met mijn opgedane kennis heb geschreven.</p><h2 id="42-Wat-doe-ik-de-volgende-keer-anders"><a class="anchor hidden-xs" href="#42-Wat-doe-ik-de-volgende-keer-anders" title="42-Wat-doe-ik-de-volgende-keer-anders"><i class="fa fa-link"></i></a>4.2 Wat doe ik de volgende keer anders?</h2><p>De volgende keer ga ik niet blind alle opdrachten maken, maar eerst kijken of een opdracht nodig/nuttig is. In het document stonden meer opdrachten dan nodig was om alles te begrijpen. Doordat ik alle opdrachten deed, kwam ik aan het einde in tijdnood toen ik mijn eigen opdracht moest doen.</p><h2 id="43-Welke-formatieve-indicatie-zou-ik-mezelf-geven-voor-de-verdieping-technology"><a class="anchor hidden-xs" href="#43-Welke-formatieve-indicatie-zou-ik-mezelf-geven-voor-de-verdieping-technology" title="43-Welke-formatieve-indicatie-zou-ik-mezelf-geven-voor-de-verdieping-technology"><i class="fa fa-link"></i></a>4.3 Welke formatieve indicatie zou ik mezelf geven voor de verdieping technology?</h2><p><strong>Leeruitkomst verdieping Technology (bouwt voort op de oriëntatie)</strong></p><table>
+</div></div></code></pre><p>Daarnaast heb ik geleerd hoe ik een communicatieprotocol kan opstellen om tussen verschillende systemen te kunnen communiceren. Net als in het voorbeeld bestaat mijn protocol uit een beginkarakter, een parameter karakter en een eindkarakter. Het eerste karakter (na het begin) is waar het over gaat en in de parameter staat wat er moet gebeuren / welke state er aangenomen moet worden. Zo zet <code>!B-0?</code> de knipperlichten van de auto uit.</p><p>Ten slotte heb ik nog de begrippen van OOP herhaald.</p><p>Class:</p><pre><code class="cpp hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span></div><div class="code"><span class="hljs-meta">#<span class="hljs-meta-keyword">ifndef</span> Timer_h</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> Timer_h</span>
+
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">"Arduino.h"</span></span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Timer</span>
+{</span>
+  <span class="hljs-keyword">public</span>:
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Start</span><span class="hljs-params">(<span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span>)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">Passed</span><span class="hljs-params">()</span></span>;
+  <span class="hljs-keyword">private</span>:
+    <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span> startTime;
+    <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span> duration;
+};
+
+<span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span></span>
+</div></div></code></pre><pre><code class="cpp hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span></div><div class="code"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">"Arduino.h"</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">"Timer.h"</span></span>
+
+<span class="hljs-keyword">void</span> Timer::Start(<span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span> _duration) {
+  duration = _duration;
+  startTime = millis();
+}
+
+<span class="hljs-keyword">bool</span> Timer::Passed()
+{
+  <span class="hljs-keyword">return</span> (millis() - startTime &gt; duration);
+}
+</div></div></code></pre><p>Object:</p><pre><code class="cpp hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span></div><div class="code">Servo servo;
+</div></div></code></pre><p>Constructor:</p><pre><code class="cpp hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span></div><div class="code">HeadLight::HeadLight(<span class="hljs-keyword">int</span> _ledPin, <span class="hljs-keyword">int</span> _ldrPin, <span class="hljs-keyword">int</span> _potPin) : led(_ledPin)
+{
+  ldrPin = _ldrPin;
+  potPin = _potPin;
+  pinMode(ldrPin, INPUT);
+  pinMode(potPin, INPUT);
+}
+</div></div></code></pre><p>Methode:</p><pre><code class="cpp hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span></div><div class="code"><span class="hljs-keyword">void</span> Communication::Send(String cmd) {
+  Serial.print(cmd);
+}
+</div></div></code></pre><p>Properties:</p><pre><code class="cpp hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span></div><div class="code"><span class="hljs-keyword">int</span> Drive::State() {
+  <span class="hljs-keyword">return</span> state;
+}
+
+<span class="hljs-keyword">void</span> Drive::State(<span class="hljs-keyword">int</span> _new) {
+  oldState = state;
+  state = _new;
+}
+</div></div></code></pre><p>Private fields:</p><pre><code class="cpp hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span></div><div class="code"><span class="hljs-keyword">private</span>:
+    <span class="hljs-keyword">int</span> state;
+    <span class="hljs-keyword">int</span> oldState;
+</div></div></code></pre><h4 id="Bronnen"><a class="anchor hidden-xs" href="#Bronnen" title="Bronnen"><i class="fa fa-link"></i></a>Bronnen</h4><p><a href="https://www.csharp-examples.net/create-new-thread/" target="_blank" rel="noopener">https://www.csharp-examples.net/create-new-thread/</a></p><p><a href="https://www.geeksforgeeks.org/c-sharp-constructor-overloading/" target="_blank" rel="noopener">https://www.geeksforgeeks.org/c-sharp-constructor-overloading/</a></p><p><a href="https://www.programiz.com/csharp-programming/method-overloading" target="_blank" rel="noopener">https://www.programiz.com/csharp-programming/method-overloading</a></p><p><a href="https://git.fhict.nl/technology/t-sem1/-/tree/master/Verdieping/Toolbox" target="_blank" rel="noopener">Working document Verdieping</a></p><hr><h1 id="4-Reflectie--evaluatie"><a class="anchor hidden-xs" href="#4-Reflectie--evaluatie" title="4-Reflectie--evaluatie"><i class="fa fa-link"></i></a>4 Reflectie / evaluatie</h1><h2 id="41-Waar-ben-ik-trots-op"><a class="anchor hidden-xs" href="#41-Waar-ben-ik-trots-op" title="41-Waar-ben-ik-trots-op"><i class="fa fa-link"></i></a>4.1 Waar ben ik trots op?</h2><p>Ik ben trots op de programma’s die ik met mijn opgedane kennis heb geschreven.</p><h2 id="42-Wat-doe-ik-de-volgende-keer-anders"><a class="anchor hidden-xs" href="#42-Wat-doe-ik-de-volgende-keer-anders" title="42-Wat-doe-ik-de-volgende-keer-anders"><i class="fa fa-link"></i></a>4.2 Wat doe ik de volgende keer anders?</h2><p>De volgende keer ga ik niet blind alle opdrachten maken, maar eerst kijken of een opdracht nodig/nuttig is. In het document stonden meer opdrachten dan nodig was om alles te begrijpen. Doordat ik alle opdrachten deed, kwam ik aan het einde in tijdnood toen ik mijn eigen opdracht moest doen.</p><h2 id="43-Welke-formatieve-indicatie-zou-ik-mezelf-geven-voor-de-verdieping-technology"><a class="anchor hidden-xs" href="#43-Welke-formatieve-indicatie-zou-ik-mezelf-geven-voor-de-verdieping-technology" title="43-Welke-formatieve-indicatie-zou-ik-mezelf-geven-voor-de-verdieping-technology"><i class="fa fa-link"></i></a>4.3 Welke formatieve indicatie zou ik mezelf geven voor de verdieping technology?</h2><p><strong>Leeruitkomst verdieping Technology (bouwt voort op de oriëntatie)</strong></p><table>
 <thead>
 <tr>
 <th>Onderdeel</th>
@@ -787,40 +880,40 @@ communicationThread.Start();
             <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
                 <div class="toc"><ul class="nav">
 <li class=""><a href="#Startsemester-verdiepingsverslag-technology" title="Startsemester verdiepingsverslag technology">Startsemester verdiepingsverslag technology</a></li>
-<li><a href="#Versiebeheer" title="Versiebeheer">Versiebeheer</a></li>
-<li><a href="#Inhoudsopgave" title="Inhoudsopgave">Inhoudsopgave</a></li>
-<li><a href="#1-Inleiding" title="1 Inleiding">1 Inleiding</a><ul class="nav">
-<li><a href="#11-Aanleiding" title="1.1 Aanleiding">1.1 Aanleiding</a></li>
-<li><a href="#12-Onderwerp" title="1.2 Onderwerp">1.2 Onderwerp</a></li>
-<li><a href="#13-Leeswijzer" title="1.3 Leeswijzer">1.3 Leeswijzer</a></li>
+<li class=""><a href="#Versiebeheer" title="Versiebeheer">Versiebeheer</a></li>
+<li class=""><a href="#Inhoudsopgave" title="Inhoudsopgave">Inhoudsopgave</a></li>
+<li class=""><a href="#1-Inleiding" title="1 Inleiding">1 Inleiding</a><ul class="nav">
+<li class=""><a href="#11-Aanleiding" title="1.1 Aanleiding">1.1 Aanleiding</a></li>
+<li class=""><a href="#12-Onderwerp" title="1.2 Onderwerp">1.2 Onderwerp</a></li>
+<li class=""><a href="#13-Leeswijzer" title="1.3 Leeswijzer">1.3 Leeswijzer</a></li>
 </ul>
 </li>
-<li><a href="#2-Introductie" title="2 Introductie">2 Introductie</a></li>
+<li class=""><a href="#2-Introductie" title="2 Introductie">2 Introductie</a></li>
 <li class=""><a href="#3-Aantonen-leerdoelen" title="3 Aantonen leerdoelen">3 Aantonen leerdoelen</a><ul class="nav">
-<li><a href="#31-Sprint-1-proof-of-concepts" title="3.1 Sprint 1: proof of concepts">3.1 Sprint 1: proof of concepts</a><ul class="nav">
-<li><a href="#Challenge-221-Arduino-pinout" title="Challenge 2.2.1 Arduino pinout">Challenge 2.2.1 Arduino pinout</a></li>
-<li><a href="#Challenge-251-Tinkercad-circuit" title="Challenge 2.5.1 Tinkercad circuit">Challenge 2.5.1 Tinkercad circuit</a></li>
-<li><a href="#Challenge-252-Breadboard-circuit" title="Challenge 2.5.2 Breadboard circuit">Challenge 2.5.2 Breadboard circuit</a></li>
-<li><a href="#Challenge-321-Blinking-led" title="Challenge 3.2.1 Blinking led">Challenge 3.2.1 Blinking led</a></li>
-<li><a href="#Challenge-323-Button-function" title="Challenge 3.2.3 Button function">Challenge 3.2.3 Button function</a></li>
-<li><a href="#Challenge-331-State-machine-expert" title="Challenge 3.3.1 State machine expert">Challenge 3.3.1 State machine expert</a></li>
-<li><a href="#Challenge-411-IO-techniques" title="Challenge 4.1.1 I/O techniques">Challenge 4.1.1 I/O techniques</a></li>
-<li><a href="#Challenge-521-Analog-sensor-and-Serial-Plotter" title="Challenge 5.2.1 Analog sensor and Serial Plotter">Challenge 5.2.1 Analog sensor and Serial Plotter</a></li>
-<li><a href="#Challenge-522-LDR-sensor" title="Challenge 5.2.2 LDR sensor">Challenge 5.2.2 LDR sensor</a></li>
-<li><a href="#Challenge-523-Scaling" title="Challenge 5.2.3 Scaling">Challenge 5.2.3 Scaling</a></li>
-<li><a href="#Challenge-524-Running-average" title="Challenge 5.2.4 Running average">Challenge 5.2.4 Running average</a></li>
-<li><a href="#Challenge-525-Hysteresis" title="Challenge 5.2.5 Hysteresis">Challenge 5.2.5 Hysteresis</a></li>
-<li><a href="#Challenge-611-DHT-Library" title="Challenge 6.1.1 DHT Library">Challenge 6.1.1 DHT Library</a></li>
-<li><a href="#Challenge-612-Ping-sensor-library" title="Challenge 6.1.2 Ping sensor library">Challenge 6.1.2 Ping sensor library</a></li>
+<li class=""><a href="#31-Sprint-1-proof-of-concepts" title="3.1 Sprint 1: proof of concepts">3.1 Sprint 1: proof of concepts</a><ul class="nav">
+<li class=""><a href="#Challenge-221-Arduino-pinout" title="Challenge 2.2.1 Arduino pinout">Challenge 2.2.1 Arduino pinout</a></li>
+<li class=""><a href="#Challenge-251-Tinkercad-circuit" title="Challenge 2.5.1 Tinkercad circuit">Challenge 2.5.1 Tinkercad circuit</a></li>
+<li class=""><a href="#Challenge-252-Breadboard-circuit" title="Challenge 2.5.2 Breadboard circuit">Challenge 2.5.2 Breadboard circuit</a></li>
+<li class=""><a href="#Challenge-321-Blinking-led" title="Challenge 3.2.1 Blinking led">Challenge 3.2.1 Blinking led</a></li>
+<li class=""><a href="#Challenge-323-Button-function" title="Challenge 3.2.3 Button function">Challenge 3.2.3 Button function</a></li>
+<li class=""><a href="#Challenge-331-State-machine-expert" title="Challenge 3.3.1 State machine expert">Challenge 3.3.1 State machine expert</a></li>
+<li class=""><a href="#Challenge-411-IO-techniques" title="Challenge 4.1.1 I/O techniques">Challenge 4.1.1 I/O techniques</a></li>
+<li class=""><a href="#Challenge-521-Analog-sensor-and-Serial-Plotter" title="Challenge 5.2.1 Analog sensor and Serial Plotter">Challenge 5.2.1 Analog sensor and Serial Plotter</a></li>
+<li class=""><a href="#Challenge-522-LDR-sensor" title="Challenge 5.2.2 LDR sensor">Challenge 5.2.2 LDR sensor</a></li>
+<li class=""><a href="#Challenge-523-Scaling" title="Challenge 5.2.3 Scaling">Challenge 5.2.3 Scaling</a></li>
+<li class=""><a href="#Challenge-524-Running-average" title="Challenge 5.2.4 Running average">Challenge 5.2.4 Running average</a></li>
+<li class=""><a href="#Challenge-525-Hysteresis" title="Challenge 5.2.5 Hysteresis">Challenge 5.2.5 Hysteresis</a></li>
+<li class=""><a href="#Challenge-611-DHT-Library" title="Challenge 6.1.1 DHT Library">Challenge 6.1.1 DHT Library</a></li>
+<li class=""><a href="#Challenge-612-Ping-sensor-library" title="Challenge 6.1.2 Ping sensor library">Challenge 6.1.2 Ping sensor library</a></li>
 </ul>
 </li>
 <li class=""><a href="#32-Sprint-2-tussenproduct" title="3.2 Sprint 2: tussenproduct">3.2 Sprint 2: tussenproduct</a><ul class="nav">
-<li><a href="#Challenge-712-Traffic-light" title="Challenge 7.1.2 Traffic light">Challenge 7.1.2 Traffic light</a></li>
-<li><a href="#Challenge-C-OOP-Connect4" title="Challenge C# OOP Connect4">Challenge C# OOP Connect4</a></li>
-<li><a href="#Challenge-714-LED-class-expert" title="Challenge 7.1.4 LED class expert">Challenge 7.1.4 LED class expert</a></li>
-<li><a href="#Challenge-715-Button-class-expert" title="Challenge 7.1.5 Button class expert">Challenge 7.1.5 Button class expert</a></li>
-<li><a href="#Challenge-716-Timer-class-expert" title="Challenge 7.1.6 Timer class expert">Challenge 7.1.6 Timer class expert</a></li>
-<li><a href="#Challenge-717-Traffic-light-expert" title="Challenge 7.1.7 Traffic light expert">Challenge 7.1.7 Traffic light expert</a></li>
+<li class=""><a href="#Challenge-712-Traffic-light" title="Challenge 7.1.2 Traffic light">Challenge 7.1.2 Traffic light</a></li>
+<li class=""><a href="#Challenge-C-OOP-Connect4" title="Challenge C# OOP Connect4">Challenge C# OOP Connect4</a></li>
+<li class=""><a href="#Challenge-714-LED-class-expert" title="Challenge 7.1.4 LED class expert">Challenge 7.1.4 LED class expert</a></li>
+<li class=""><a href="#Challenge-715-Button-class-expert" title="Challenge 7.1.5 Button class expert">Challenge 7.1.5 Button class expert</a></li>
+<li class=""><a href="#Challenge-716-Timer-class-expert" title="Challenge 7.1.6 Timer class expert">Challenge 7.1.6 Timer class expert</a></li>
+<li class=""><a href="#Challenge-717-Traffic-light-expert" title="Challenge 7.1.7 Traffic light expert">Challenge 7.1.7 Traffic light expert</a></li>
 <li class=""><a href="#Challenge-718-Car-system-expert" title="Challenge 7.1.8 Car system expert">Challenge 7.1.8 Car system expert</a></li>
 </ul>
 </li>
