@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -715,7 +716,7 @@ servo.write(general + precise);
 delayMicroseconds(<span class="hljs-number">1000</span>);
 digitalWrite(<span class="hljs-number">5</span>, LOW);
 delayMicroseconds(<span class="hljs-number">19000</span>);
-</div></div></code></pre><h4 id="Bronnen20"><a class="anchor hidden-xs" href="#Bronnen20" title="Bronnen20"><i class="fa fa-link"></i></a>Bronnen</h4><p><a href="http://www.ee.ic.ac.uk/pcheung/teaching/DE1_EE/stores/sg90_datasheet.pdf" target="_blank" rel="noopener">http://www.ee.ic.ac.uk/pcheung/teaching/DE1_EE/stores/sg90_datasheet.pdf</a></p><p><a href="https://cdn.arduino.cc/reference/en/language/functions/math/constrain/" target="_blank" rel="noopener">https://cdn.arduino.cc/reference/en/language/functions/math/constrain/</a></p><p><a href="https://cdn.arduino.cc/reference/en/language/functions/analog-io/analogwrite/" target="_blank" rel="noopener">https://cdn.arduino.cc/reference/en/language/functions/analog-io/analogwrite/</a></p><h3 id="Challenge-1000-Eigen-project-auto"><a class="anchor hidden-xs" href="#Challenge-1000-Eigen-project-auto" title="Challenge-1000-Eigen-project-auto"><i class="fa fa-link"></i></a>Challenge 10.0.0 Eigen project: auto</h3><h4 id="Beschrijving23"><a class="anchor hidden-xs" href="#Beschrijving23" title="Beschrijving23"><i class="fa fa-link"></i></a>Beschrijving</h4><p>Maak een ‘auto’ waarbij je verschillende van de geleerde technieken toepast.</p><h4 id="Aanpak21"><a class="anchor hidden-xs" href="#Aanpak21" title="Aanpak21"><i class="fa fa-link"></i></a>Aanpak</h4><p>Ik ga met een arduino en wat sensoren en actuatoren een auto simuleren. De auto die ik ga maken heeft automatische voor en achterlampen met een groot licht stand. De threshold is in te stellen met een potmeter. Daarnaast heeft de auto knipperlichten die reageren op het stuur, wat bestaat uit een servo. Ook beschikt de auto over een claxon. Het rijden van de auto wordt aangegeven met ledjes, ook is er een remlicht aanwezig en een infraroodsensor om automatisch te remmen wanneer er een object te dichtbij komt. De besturing van dit alles gaat met een C# applicatie die heen en weer met de arduino communiceert.</p><h4 id="Test-resultaat20"><a class="anchor hidden-xs" href="#Test-resultaat20" title="Test-resultaat20"><i class="fa fa-link"></i></a>Test resultaat</h4><p>De auto werkt zoals verwacht. Wel is het in meerdere takes opgenomen omdat de hardware niet altijd even goed werkt (slechte breadboard verbindingen en een servo die soms vertraging heeft).</p><p><a href="https://www.youtube.com/watch?v=agqTaG-g1RA" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/agqTaG-g1RA/0.jpg" alt="" class="md-image md-image"></a></p><p><a href="https://www.youtube.com/watch?v=agqTaG-g1RA" target="_blank" rel="noopener">https://www.youtube.com/watch?v=agqTaG-g1RA</a></p><h4 id="Wat-heb-ik-geleerd23"><a class="anchor hidden-xs" href="#Wat-heb-ik-geleerd23" title="Wat-heb-ik-geleerd23"><i class="fa fa-link"></i></a>Wat heb ik geleerd?</h4><p>Ik heb geleerd om gebruik te maken van constructor en functie overloading. Dit is dat er meerdere constructors of functies met dezelfde naam zijn, maar met andere parameters. Aan de hand van de meegegeven parameters, wordt de juiste constructor / functie uitgevoerd.</p><pre><code class="csharp hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+</div></div></code></pre><h4 id="Bronnen20"><a class="anchor hidden-xs" href="#Bronnen20" title="Bronnen20"><i class="fa fa-link"></i></a>Bronnen</h4><p><a href="http://www.ee.ic.ac.uk/pcheung/teaching/DE1_EE/stores/sg90_datasheet.pdf" target="_blank" rel="noopener">http://www.ee.ic.ac.uk/pcheung/teaching/DE1_EE/stores/sg90_datasheet.pdf</a></p><p><a href="https://cdn.arduino.cc/reference/en/language/functions/math/constrain/" target="_blank" rel="noopener">https://cdn.arduino.cc/reference/en/language/functions/math/constrain/</a></p><p><a href="https://cdn.arduino.cc/reference/en/language/functions/analog-io/analogwrite/" target="_blank" rel="noopener">https://cdn.arduino.cc/reference/en/language/functions/analog-io/analogwrite/</a></p><h3 id="Challenge-1000-Eigen-project-auto"><a class="anchor hidden-xs" href="#Challenge-1000-Eigen-project-auto" title="Challenge-1000-Eigen-project-auto"><i class="fa fa-link"></i></a>Challenge 10.0.0 Eigen project: auto</h3><h4 id="Beschrijving23"><a class="anchor hidden-xs" href="#Beschrijving23" title="Beschrijving23"><i class="fa fa-link"></i></a>Beschrijving</h4><p>Maak een ‘auto’ waarbij je verschillende van de geleerde technieken toepast.</p><h4 id="Aanpak21"><a class="anchor hidden-xs" href="#Aanpak21" title="Aanpak21"><i class="fa fa-link"></i></a>Aanpak</h4><p>Ik ga met een arduino en wat sensoren en actuatoren een auto simuleren. De auto die ik ga maken heeft automatische voor en achterlampen met een groot licht stand. De threshold is in te stellen met een potmeter. Daarnaast heeft de auto knipperlichten die reageren op het stuur, wat bestaat uit een servo. Ook beschikt de auto over een claxon. Het rijden van de auto wordt aangegeven met ledjes, ook is er een remlicht aanwezig en een infraroodsensor om automatisch te remmen wanneer er een object te dichtbij komt. De besturing van dit alles gaat met een C# applicatie die heen en weer met de arduino communiceert.</p><h4 id="Test-resultaat20"><a class="anchor hidden-xs" href="#Test-resultaat20" title="Test-resultaat20"><i class="fa fa-link"></i></a>Test resultaat</h4><p>De auto werkt zoals verwacht. Wel is het in meerdere takes opgenomen omdat de hardware niet altijd even goed werkt (slechte breadboard verbindingen en een servo die soms vertraging heeft).</p><p><a href="https://www.youtube.com/watch?v=cwCK5XTTr30" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/cwCK5XTTr30/0.jpg" alt="" class="md-image md-image"></a></p><p><a href="https://www.youtube.com/watch?v=cwCK5XTTr30" target="_blank" rel="noopener">https://www.youtube.com/watch?v=cwCK5XTTr30</a></p><h4 id="Wat-heb-ik-geleerd23"><a class="anchor hidden-xs" href="#Wat-heb-ik-geleerd23" title="Wat-heb-ik-geleerd23"><i class="fa fa-link"></i></a>Wat heb ik geleerd?</h4><p>Ik heb geleerd om gebruik te maken van constructor en functie overloading. Dit is dat er meerdere constructors of functies met dezelfde naam zijn, maar met andere parameters. Aan de hand van de meegegeven parameters, wordt de juiste constructor / functie uitgevoerd.</p><pre><code class="csharp hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
 <span data-linenumber="2"></span>
 <span data-linenumber="3"></span></div><div class="code">public <span class="hljs-constructor">Communication()</span> {}
 
@@ -895,45 +896,45 @@ communicationThread.Start();
 </li>
 <li><a href="#2-Introductie" title="2 Introductie">2 Introductie</a></li>
 <li class=""><a href="#3-Aantonen-leerdoelen" title="3 Aantonen leerdoelen">3 Aantonen leerdoelen</a><ul class="nav">
-<li class=""><a href="#31-Sprint-1-proof-of-concepts" title="3.1 Sprint 1: proof of concepts">3.1 Sprint 1: proof of concepts</a><ul class="nav">
-<li class=""><a href="#Challenge-221-Arduino-pinout" title="Challenge 2.2.1 Arduino pinout">Challenge 2.2.1 Arduino pinout</a></li>
-<li class=""><a href="#Challenge-251-Tinkercad-circuit" title="Challenge 2.5.1 Tinkercad circuit">Challenge 2.5.1 Tinkercad circuit</a></li>
-<li class=""><a href="#Challenge-252-Breadboard-circuit" title="Challenge 2.5.2 Breadboard circuit">Challenge 2.5.2 Breadboard circuit</a></li>
-<li class=""><a href="#Challenge-321-Blinking-led" title="Challenge 3.2.1 Blinking led">Challenge 3.2.1 Blinking led</a></li>
-<li class=""><a href="#Challenge-323-Button-function" title="Challenge 3.2.3 Button function">Challenge 3.2.3 Button function</a></li>
-<li class=""><a href="#Challenge-331-State-machine-expert" title="Challenge 3.3.1 State machine expert">Challenge 3.3.1 State machine expert</a></li>
-<li class=""><a href="#Challenge-411-IO-techniques" title="Challenge 4.1.1 I/O techniques">Challenge 4.1.1 I/O techniques</a></li>
-<li class=""><a href="#Challenge-521-Analog-sensor-and-Serial-Plotter" title="Challenge 5.2.1 Analog sensor and Serial Plotter">Challenge 5.2.1 Analog sensor and Serial Plotter</a></li>
-<li class=""><a href="#Challenge-522-LDR-sensor" title="Challenge 5.2.2 LDR sensor">Challenge 5.2.2 LDR sensor</a></li>
-<li class=""><a href="#Challenge-523-Scaling" title="Challenge 5.2.3 Scaling">Challenge 5.2.3 Scaling</a></li>
-<li class=""><a href="#Challenge-524-Running-average" title="Challenge 5.2.4 Running average">Challenge 5.2.4 Running average</a></li>
-<li class=""><a href="#Challenge-525-Hysteresis" title="Challenge 5.2.5 Hysteresis">Challenge 5.2.5 Hysteresis</a></li>
-<li class=""><a href="#Challenge-611-DHT-Library" title="Challenge 6.1.1 DHT Library">Challenge 6.1.1 DHT Library</a></li>
-<li class=""><a href="#Challenge-612-Ping-sensor-library" title="Challenge 6.1.2 Ping sensor library">Challenge 6.1.2 Ping sensor library</a></li>
+<li><a href="#31-Sprint-1-proof-of-concepts" title="3.1 Sprint 1: proof of concepts">3.1 Sprint 1: proof of concepts</a><ul class="nav">
+<li><a href="#Challenge-221-Arduino-pinout" title="Challenge 2.2.1 Arduino pinout">Challenge 2.2.1 Arduino pinout</a></li>
+<li><a href="#Challenge-251-Tinkercad-circuit" title="Challenge 2.5.1 Tinkercad circuit">Challenge 2.5.1 Tinkercad circuit</a></li>
+<li><a href="#Challenge-252-Breadboard-circuit" title="Challenge 2.5.2 Breadboard circuit">Challenge 2.5.2 Breadboard circuit</a></li>
+<li><a href="#Challenge-321-Blinking-led" title="Challenge 3.2.1 Blinking led">Challenge 3.2.1 Blinking led</a></li>
+<li><a href="#Challenge-323-Button-function" title="Challenge 3.2.3 Button function">Challenge 3.2.3 Button function</a></li>
+<li><a href="#Challenge-331-State-machine-expert" title="Challenge 3.3.1 State machine expert">Challenge 3.3.1 State machine expert</a></li>
+<li><a href="#Challenge-411-IO-techniques" title="Challenge 4.1.1 I/O techniques">Challenge 4.1.1 I/O techniques</a></li>
+<li><a href="#Challenge-521-Analog-sensor-and-Serial-Plotter" title="Challenge 5.2.1 Analog sensor and Serial Plotter">Challenge 5.2.1 Analog sensor and Serial Plotter</a></li>
+<li><a href="#Challenge-522-LDR-sensor" title="Challenge 5.2.2 LDR sensor">Challenge 5.2.2 LDR sensor</a></li>
+<li><a href="#Challenge-523-Scaling" title="Challenge 5.2.3 Scaling">Challenge 5.2.3 Scaling</a></li>
+<li><a href="#Challenge-524-Running-average" title="Challenge 5.2.4 Running average">Challenge 5.2.4 Running average</a></li>
+<li><a href="#Challenge-525-Hysteresis" title="Challenge 5.2.5 Hysteresis">Challenge 5.2.5 Hysteresis</a></li>
+<li><a href="#Challenge-611-DHT-Library" title="Challenge 6.1.1 DHT Library">Challenge 6.1.1 DHT Library</a></li>
+<li><a href="#Challenge-612-Ping-sensor-library" title="Challenge 6.1.2 Ping sensor library">Challenge 6.1.2 Ping sensor library</a></li>
 </ul>
 </li>
-<li class=""><a href="#32-Sprint-2-tussenproduct" title="3.2 Sprint 2: tussenproduct">3.2 Sprint 2: tussenproduct</a><ul class="nav">
-<li class=""><a href="#Challenge-712-Traffic-light" title="Challenge 7.1.2 Traffic light">Challenge 7.1.2 Traffic light</a></li>
-<li class=""><a href="#Challenge-C-OOP-Connect4" title="Challenge C# OOP Connect4">Challenge C# OOP Connect4</a></li>
-<li class=""><a href="#Challenge-714-LED-class-expert" title="Challenge 7.1.4 LED class expert">Challenge 7.1.4 LED class expert</a></li>
-<li class=""><a href="#Challenge-715-Button-class-expert" title="Challenge 7.1.5 Button class expert">Challenge 7.1.5 Button class expert</a></li>
-<li class=""><a href="#Challenge-716-Timer-class-expert" title="Challenge 7.1.6 Timer class expert">Challenge 7.1.6 Timer class expert</a></li>
-<li class=""><a href="#Challenge-717-Traffic-light-expert" title="Challenge 7.1.7 Traffic light expert">Challenge 7.1.7 Traffic light expert</a></li>
-<li class=""><a href="#Challenge-718-Car-system-expert" title="Challenge 7.1.8 Car system expert">Challenge 7.1.8 Car system expert</a></li>
+<li><a href="#32-Sprint-2-tussenproduct" title="3.2 Sprint 2: tussenproduct">3.2 Sprint 2: tussenproduct</a><ul class="nav">
+<li><a href="#Challenge-712-Traffic-light" title="Challenge 7.1.2 Traffic light">Challenge 7.1.2 Traffic light</a></li>
+<li><a href="#Challenge-C-OOP-Connect4" title="Challenge C# OOP Connect4">Challenge C# OOP Connect4</a></li>
+<li><a href="#Challenge-714-LED-class-expert" title="Challenge 7.1.4 LED class expert">Challenge 7.1.4 LED class expert</a></li>
+<li><a href="#Challenge-715-Button-class-expert" title="Challenge 7.1.5 Button class expert">Challenge 7.1.5 Button class expert</a></li>
+<li><a href="#Challenge-716-Timer-class-expert" title="Challenge 7.1.6 Timer class expert">Challenge 7.1.6 Timer class expert</a></li>
+<li><a href="#Challenge-717-Traffic-light-expert" title="Challenge 7.1.7 Traffic light expert">Challenge 7.1.7 Traffic light expert</a></li>
+<li><a href="#Challenge-718-Car-system-expert" title="Challenge 7.1.8 Car system expert">Challenge 7.1.8 Car system expert</a></li>
 </ul>
 </li>
 <li class=""><a href="#32-Sprint-3-eindproduct" title="3.2 Sprint 3: eindproduct">3.2 Sprint 3: eindproduct</a><ul class="nav">
-<li class=""><a href="#Challenge-821-PWM-LED" title="Challenge 8.2.1 PWM LED">Challenge 8.2.1 PWM LED</a></li>
+<li><a href="#Challenge-821-PWM-LED" title="Challenge 8.2.1 PWM LED">Challenge 8.2.1 PWM LED</a></li>
 <li class=""><a href="#Challenge-822-Servo-control" title="Challenge 8.2.2 Servo control">Challenge 8.2.2 Servo control</a></li>
 <li class=""><a href="#Challenge-1000-Eigen-project-auto" title="Challenge 10.0.0 Eigen project: auto">Challenge 10.0.0 Eigen project: auto</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class=""><a href="#4-Reflectie--evaluatie" title="4 Reflectie / evaluatie">4 Reflectie / evaluatie</a><ul class="nav">
-<li class=""><a href="#41-Waar-ben-ik-trots-op" title="4.1 Waar ben ik trots op?">4.1 Waar ben ik trots op?</a></li>
-<li class=""><a href="#42-Wat-doe-ik-de-volgende-keer-anders" title="4.2 Wat doe ik de volgende keer anders?">4.2 Wat doe ik de volgende keer anders?</a></li>
-<li class=""><a href="#43-Welke-formatieve-indicatie-zou-ik-mezelf-geven-voor-de-verdieping-technology" title="4.3 Welke formatieve indicatie zou ik mezelf geven voor de verdieping technology?">4.3 Welke formatieve indicatie zou ik mezelf geven voor de verdieping technology?</a></li>
+<li><a href="#4-Reflectie--evaluatie" title="4 Reflectie / evaluatie">4 Reflectie / evaluatie</a><ul class="nav">
+<li><a href="#41-Waar-ben-ik-trots-op" title="4.1 Waar ben ik trots op?">4.1 Waar ben ik trots op?</a></li>
+<li><a href="#42-Wat-doe-ik-de-volgende-keer-anders" title="4.2 Wat doe ik de volgende keer anders?">4.2 Wat doe ik de volgende keer anders?</a></li>
+<li><a href="#43-Welke-formatieve-indicatie-zou-ik-mezelf-geven-voor-de-verdieping-technology" title="4.3 Welke formatieve indicatie zou ik mezelf geven voor de verdieping technology?">4.3 Welke formatieve indicatie zou ik mezelf geven voor de verdieping technology?</a></li>
 </ul>
 </li>
 </ul>
@@ -952,47 +953,47 @@ communicationThread.Start();
 <li><a href="#13-Leeswijzer" title="1.3 Leeswijzer">1.3 Leeswijzer</a></li>
 </ul>
 </li>
-<li class=""><a href="#2-Introductie" title="2 Introductie">2 Introductie</a></li>
+<li><a href="#2-Introductie" title="2 Introductie">2 Introductie</a></li>
 <li class=""><a href="#3-Aantonen-leerdoelen" title="3 Aantonen leerdoelen">3 Aantonen leerdoelen</a><ul class="nav">
-<li class=""><a href="#31-Sprint-1-proof-of-concepts" title="3.1 Sprint 1: proof of concepts">3.1 Sprint 1: proof of concepts</a><ul class="nav">
-<li class=""><a href="#Challenge-221-Arduino-pinout" title="Challenge 2.2.1 Arduino pinout">Challenge 2.2.1 Arduino pinout</a></li>
-<li class=""><a href="#Challenge-251-Tinkercad-circuit" title="Challenge 2.5.1 Tinkercad circuit">Challenge 2.5.1 Tinkercad circuit</a></li>
-<li class=""><a href="#Challenge-252-Breadboard-circuit" title="Challenge 2.5.2 Breadboard circuit">Challenge 2.5.2 Breadboard circuit</a></li>
-<li class=""><a href="#Challenge-321-Blinking-led" title="Challenge 3.2.1 Blinking led">Challenge 3.2.1 Blinking led</a></li>
-<li class=""><a href="#Challenge-323-Button-function" title="Challenge 3.2.3 Button function">Challenge 3.2.3 Button function</a></li>
-<li class=""><a href="#Challenge-331-State-machine-expert" title="Challenge 3.3.1 State machine expert">Challenge 3.3.1 State machine expert</a></li>
-<li class=""><a href="#Challenge-411-IO-techniques" title="Challenge 4.1.1 I/O techniques">Challenge 4.1.1 I/O techniques</a></li>
-<li class=""><a href="#Challenge-521-Analog-sensor-and-Serial-Plotter" title="Challenge 5.2.1 Analog sensor and Serial Plotter">Challenge 5.2.1 Analog sensor and Serial Plotter</a></li>
-<li class=""><a href="#Challenge-522-LDR-sensor" title="Challenge 5.2.2 LDR sensor">Challenge 5.2.2 LDR sensor</a></li>
-<li class=""><a href="#Challenge-523-Scaling" title="Challenge 5.2.3 Scaling">Challenge 5.2.3 Scaling</a></li>
-<li class=""><a href="#Challenge-524-Running-average" title="Challenge 5.2.4 Running average">Challenge 5.2.4 Running average</a></li>
-<li class=""><a href="#Challenge-525-Hysteresis" title="Challenge 5.2.5 Hysteresis">Challenge 5.2.5 Hysteresis</a></li>
-<li class=""><a href="#Challenge-611-DHT-Library" title="Challenge 6.1.1 DHT Library">Challenge 6.1.1 DHT Library</a></li>
-<li class=""><a href="#Challenge-612-Ping-sensor-library" title="Challenge 6.1.2 Ping sensor library">Challenge 6.1.2 Ping sensor library</a></li>
+<li><a href="#31-Sprint-1-proof-of-concepts" title="3.1 Sprint 1: proof of concepts">3.1 Sprint 1: proof of concepts</a><ul class="nav">
+<li><a href="#Challenge-221-Arduino-pinout" title="Challenge 2.2.1 Arduino pinout">Challenge 2.2.1 Arduino pinout</a></li>
+<li><a href="#Challenge-251-Tinkercad-circuit" title="Challenge 2.5.1 Tinkercad circuit">Challenge 2.5.1 Tinkercad circuit</a></li>
+<li><a href="#Challenge-252-Breadboard-circuit" title="Challenge 2.5.2 Breadboard circuit">Challenge 2.5.2 Breadboard circuit</a></li>
+<li><a href="#Challenge-321-Blinking-led" title="Challenge 3.2.1 Blinking led">Challenge 3.2.1 Blinking led</a></li>
+<li><a href="#Challenge-323-Button-function" title="Challenge 3.2.3 Button function">Challenge 3.2.3 Button function</a></li>
+<li><a href="#Challenge-331-State-machine-expert" title="Challenge 3.3.1 State machine expert">Challenge 3.3.1 State machine expert</a></li>
+<li><a href="#Challenge-411-IO-techniques" title="Challenge 4.1.1 I/O techniques">Challenge 4.1.1 I/O techniques</a></li>
+<li><a href="#Challenge-521-Analog-sensor-and-Serial-Plotter" title="Challenge 5.2.1 Analog sensor and Serial Plotter">Challenge 5.2.1 Analog sensor and Serial Plotter</a></li>
+<li><a href="#Challenge-522-LDR-sensor" title="Challenge 5.2.2 LDR sensor">Challenge 5.2.2 LDR sensor</a></li>
+<li><a href="#Challenge-523-Scaling" title="Challenge 5.2.3 Scaling">Challenge 5.2.3 Scaling</a></li>
+<li><a href="#Challenge-524-Running-average" title="Challenge 5.2.4 Running average">Challenge 5.2.4 Running average</a></li>
+<li><a href="#Challenge-525-Hysteresis" title="Challenge 5.2.5 Hysteresis">Challenge 5.2.5 Hysteresis</a></li>
+<li><a href="#Challenge-611-DHT-Library" title="Challenge 6.1.1 DHT Library">Challenge 6.1.1 DHT Library</a></li>
+<li><a href="#Challenge-612-Ping-sensor-library" title="Challenge 6.1.2 Ping sensor library">Challenge 6.1.2 Ping sensor library</a></li>
 </ul>
 </li>
-<li class=""><a href="#32-Sprint-2-tussenproduct" title="3.2 Sprint 2: tussenproduct">3.2 Sprint 2: tussenproduct</a><ul class="nav">
-<li class=""><a href="#Challenge-712-Traffic-light" title="Challenge 7.1.2 Traffic light">Challenge 7.1.2 Traffic light</a></li>
-<li class=""><a href="#Challenge-C-OOP-Connect4" title="Challenge C# OOP Connect4">Challenge C# OOP Connect4</a></li>
-<li class=""><a href="#Challenge-714-LED-class-expert" title="Challenge 7.1.4 LED class expert">Challenge 7.1.4 LED class expert</a></li>
-<li class=""><a href="#Challenge-715-Button-class-expert" title="Challenge 7.1.5 Button class expert">Challenge 7.1.5 Button class expert</a></li>
-<li class=""><a href="#Challenge-716-Timer-class-expert" title="Challenge 7.1.6 Timer class expert">Challenge 7.1.6 Timer class expert</a></li>
-<li class=""><a href="#Challenge-717-Traffic-light-expert" title="Challenge 7.1.7 Traffic light expert">Challenge 7.1.7 Traffic light expert</a></li>
-<li class=""><a href="#Challenge-718-Car-system-expert" title="Challenge 7.1.8 Car system expert">Challenge 7.1.8 Car system expert</a></li>
+<li><a href="#32-Sprint-2-tussenproduct" title="3.2 Sprint 2: tussenproduct">3.2 Sprint 2: tussenproduct</a><ul class="nav">
+<li><a href="#Challenge-712-Traffic-light" title="Challenge 7.1.2 Traffic light">Challenge 7.1.2 Traffic light</a></li>
+<li><a href="#Challenge-C-OOP-Connect4" title="Challenge C# OOP Connect4">Challenge C# OOP Connect4</a></li>
+<li><a href="#Challenge-714-LED-class-expert" title="Challenge 7.1.4 LED class expert">Challenge 7.1.4 LED class expert</a></li>
+<li><a href="#Challenge-715-Button-class-expert" title="Challenge 7.1.5 Button class expert">Challenge 7.1.5 Button class expert</a></li>
+<li><a href="#Challenge-716-Timer-class-expert" title="Challenge 7.1.6 Timer class expert">Challenge 7.1.6 Timer class expert</a></li>
+<li><a href="#Challenge-717-Traffic-light-expert" title="Challenge 7.1.7 Traffic light expert">Challenge 7.1.7 Traffic light expert</a></li>
+<li><a href="#Challenge-718-Car-system-expert" title="Challenge 7.1.8 Car system expert">Challenge 7.1.8 Car system expert</a></li>
 </ul>
 </li>
 <li class=""><a href="#32-Sprint-3-eindproduct" title="3.2 Sprint 3: eindproduct">3.2 Sprint 3: eindproduct</a><ul class="nav">
-<li class=""><a href="#Challenge-821-PWM-LED" title="Challenge 8.2.1 PWM LED">Challenge 8.2.1 PWM LED</a></li>
+<li><a href="#Challenge-821-PWM-LED" title="Challenge 8.2.1 PWM LED">Challenge 8.2.1 PWM LED</a></li>
 <li class=""><a href="#Challenge-822-Servo-control" title="Challenge 8.2.2 Servo control">Challenge 8.2.2 Servo control</a></li>
 <li class=""><a href="#Challenge-1000-Eigen-project-auto" title="Challenge 10.0.0 Eigen project: auto">Challenge 10.0.0 Eigen project: auto</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class=""><a href="#4-Reflectie--evaluatie" title="4 Reflectie / evaluatie">4 Reflectie / evaluatie</a><ul class="nav">
-<li class=""><a href="#41-Waar-ben-ik-trots-op" title="4.1 Waar ben ik trots op?">4.1 Waar ben ik trots op?</a></li>
-<li class=""><a href="#42-Wat-doe-ik-de-volgende-keer-anders" title="4.2 Wat doe ik de volgende keer anders?">4.2 Wat doe ik de volgende keer anders?</a></li>
-<li class=""><a href="#43-Welke-formatieve-indicatie-zou-ik-mezelf-geven-voor-de-verdieping-technology" title="4.3 Welke formatieve indicatie zou ik mezelf geven voor de verdieping technology?">4.3 Welke formatieve indicatie zou ik mezelf geven voor de verdieping technology?</a></li>
+<li><a href="#4-Reflectie--evaluatie" title="4 Reflectie / evaluatie">4 Reflectie / evaluatie</a><ul class="nav">
+<li><a href="#41-Waar-ben-ik-trots-op" title="4.1 Waar ben ik trots op?">4.1 Waar ben ik trots op?</a></li>
+<li><a href="#42-Wat-doe-ik-de-volgende-keer-anders" title="4.2 Wat doe ik de volgende keer anders?">4.2 Wat doe ik de volgende keer anders?</a></li>
+<li><a href="#43-Welke-formatieve-indicatie-zou-ik-mezelf-geven-voor-de-verdieping-technology" title="4.3 Welke formatieve indicatie zou ik mezelf geven voor de verdieping technology?">4.3 Welke formatieve indicatie zou ik mezelf geven voor de verdieping technology?</a></li>
 </ul>
 </li>
 </ul>
